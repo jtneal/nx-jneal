@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-jneal/data-access": ["libs/data-access/src/index.ts"],
+      "@nx-jneal/feature-codes": ["libs/feature-codes/src/index.ts"],
+      "@nx-jneal/feature-games": ["libs/feature-games/src/index.ts"],
+      "@nx-jneal/feature-home": ["libs/feature-home/src/index.ts"],
+      "@nx-jneal/feature-travels": ["libs/feature-travels/src/index.ts"],
+      "@nx-jneal/ui-components": ["libs/ui-components/src/index.ts"],
+      "@nx-jneal/ui-core": ["libs/ui-core/src/index.ts"],
+      "@nx-jneal/util": ["libs/util/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
