@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'lib-feature-codes',
   imports: [CommonModule],
-  template: `<p>FeatureCodes works!</p>`,
   styles: ``,
+  template: `<p>FeatureCodes works!</p>`,
 })
 export class FeatureCodesComponent {}

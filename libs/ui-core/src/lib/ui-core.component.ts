@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'lib-ui-core',
   imports: [CommonModule],
-  template: `<p>UiCore works!</p>`,
   styles: ``,
+  template: `<p>UiCore works!</p>`,
 })
 export class UiCoreComponent {}

@@ -1,1 +1,199 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+////////////////////////////////////////////////////////////////////////////////
+// Variables & Dark Mode
+////////////////////////////////////////////////////////////////////////////////
+
+:root {
+  color-scheme: light dark;
+  --background: #fff;
+  --background-alt: #eee;
+  --background-muted: #d9ceca;
+  --blue-light: #dbe9fe;
+  --blue-mid: #bfdbfe;
+  --blue-dark: #2463eb;
+  --blue-bright: #1d40af;
+  --foreground: #000;
+  --foreground-muted: #5e5e5e;
+  --green-light: #dcfce6;
+  --green-mid: #bbf7d0;
+  --green-dark: #16a34a;
+  --green-bright: #166434;
+  --navy: #0f1729;
+  --red-light: #ffe3e3;
+  --red-mid: #ffc9c9;
+  --red-dark: #fa5353;
+  --red-bright: #c92a2a;
+  --vibrant-start: #9333ea;
+  --vibrant-middle: #3b82f6;
+  --vibrant-end: #4338ca;
+  --white: #fff;
+}
+
+.dark {
+  --background: #0f1729;
+  --background-alt: #1d2839;
+  --background-muted: #354863;
+  --blue-light: #1d2b4a;
+  --blue-mid: #1e2f5d;
+  --blue-dark: #60a5fa;
+  --foreground: #fff;
+  --foreground-muted: #a1a1a1;
+  --green-light: #1c3038;
+  --green-mid: #1c3a38;
+  --green-dark: #49de80;
+  --red-light: #302431;
+  --red-mid: #512834;
+  --red-dark: #ff8787;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// CSS Reset (https://www.joshwcomeau.com/css/custom-css-reset)
+////////////////////////////////////////////////////////////////////////////////
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Global Styles
+////////////////////////////////////////////////////////////////////////////////
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+
+  @include mat.theme(
+    (
+      color: mat.$violet-palette,
+      density: 0,
+      typography: Inter,
+    )
+  );
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground-muted);
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--foreground);
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--foreground);
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Utility Classes
+////////////////////////////////////////////////////////////////////////////////
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-small {
+  font-size: 0.875rem;
+}
+
+.text-large {
+  font-size: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}

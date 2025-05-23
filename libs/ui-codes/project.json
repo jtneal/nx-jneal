@@ -1,0 +1,26 @@
+{
+  "name": "ui-codes",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-codes/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["type:ui"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui-codes/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "barrel": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "barrelsby --directory {projectRoot}/src --delete --exclude '.(spec|mock|test-setup).ts' --singleQuotes"
+      }
+    }
+  }
+}

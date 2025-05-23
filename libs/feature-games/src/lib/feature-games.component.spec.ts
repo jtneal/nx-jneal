@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FeatureGamesComponent } from './feature-games.component';
 
-describe('FeatureGamesComponent', () => {
+describe(FeatureGamesComponent.name, () => {
   let component: FeatureGamesComponent;
   let fixture: ComponentFixture<FeatureGamesComponent>;
 

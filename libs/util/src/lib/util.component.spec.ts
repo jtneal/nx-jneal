@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { UtilComponent } from './util.component';
 
-describe('UtilComponent', () => {
+describe(UtilComponent.name, () => {
   let component: UtilComponent;
   let fixture: ComponentFixture<UtilComponent>;
 

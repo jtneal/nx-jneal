@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'lib-util',
   imports: [CommonModule],
-  template: `<p>Util works!</p>`,
   styles: ``,
+  template: `<p>Util works!</p>`,
 })
 export class UtilComponent {}

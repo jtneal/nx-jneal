@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-ui-components',
+  selector: 'lib-ui-travels',
   imports: [CommonModule],
-  template: `<p>UiComponents works!</p>`,
   styles: ``,
+  template: `<p>UiTravels works!</p>`,
 })
-export class UiComponentsComponent {}
+export class UiTravelsComponent {}

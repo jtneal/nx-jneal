@@ -15,6 +15,12 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint"
+    },
+    "barrel": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "barrelsby --directory {projectRoot}/src --delete --exclude '.(spec|mock|test-setup).ts' --singleQuotes"
+      }
     }
   }
 }

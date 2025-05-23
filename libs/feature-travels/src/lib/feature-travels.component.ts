@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'lib-feature-travels',
   imports: [CommonModule],
-  template: `<p>FeatureTravels works!</p>`,
   styles: ``,
+  template: `<p>FeatureTravels works!</p>`,
 })
 export class FeatureTravelsComponent {}

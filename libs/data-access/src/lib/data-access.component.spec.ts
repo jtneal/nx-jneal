@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DataAccessComponent } from './data-access.component';
 
-describe('DataAccessComponent', () => {
+describe(DataAccessComponent.name, () => {
   let component: DataAccessComponent;
   let fixture: ComponentFixture<DataAccessComponent>;
 
