@@ -75,7 +75,7 @@ import { MatIconModule } from '@angular/material/icon';
     }
   `,
   template: `
-    <section class="hero">
+    <section>
       <div class="container">
         <article>
           <h1><span>Hi,</span><span>I'm</span><span>JNeal</span></h1>

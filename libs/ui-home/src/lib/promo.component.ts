@@ -117,10 +117,7 @@ import { RouterModule } from '@angular/router';
         background-color: var(--green-mid);
       }
 
-      h3 {
-        color: var(--green-dark);
-      }
-
+      h3,
       p.button {
         color: var(--green-dark);
       }

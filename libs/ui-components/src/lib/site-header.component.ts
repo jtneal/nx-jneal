@@ -30,6 +30,18 @@ import { DarkModeToggleComponent } from './dark-mode-toggle.component';
 
       .active {
         color: var(--foreground);
+
+        &.red {
+          color: var(--red-dark);
+        }
+
+        &.blue {
+          color: var(--blue-dark);
+        }
+
+        &.green {
+          color: var(--green-dark);
+        }
       }
     }
   `,
@@ -39,9 +51,9 @@ import { DarkModeToggleComponent } from './dark-mode-toggle.component';
         <nav class="text-small">
           <a routerLink="/">JNeal</a>
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-          <a routerLink="/codes" routerLinkActive="active">JNealCodes</a>
-          <a routerLink="/travels" routerLinkActive="active">JNealTravels</a>
-          <a routerLink="/games" routerLinkActive="active">JNealGames</a>
+          <a class="red" routerLink="/codes" routerLinkActive="active">JNealCodes</a>
+          <a class="blue" routerLink="/travels" routerLinkActive="active">JNealTravels</a>
+          <a class="green" routerLink="/games" routerLinkActive="active">JNealGames</a>
         </nav>
         <lib-dark-mode-toggle></lib-dark-mode-toggle>
       </div>
