@@ -7,18 +7,9 @@ import { SkillComponent } from './skill.component';
   selector: 'lib-skills',
   imports: [CommonModule, MatIconModule, SkillComponent],
   styles: `
-    section {
-      scroll-margin-top: 6rem;
-    }
-
     .container {
       align-items: start;
       flex-direction: column;
-    }
-
-    h2 {
-      font-size: 1.875rem;
-      margin-top: 2rem;
     }
 
     mat-icon {
@@ -30,7 +21,6 @@ import { SkillComponent } from './skill.component';
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      margin-top: 2rem;
       width: 100%;
     }
 
@@ -39,10 +29,10 @@ import { SkillComponent } from './skill.component';
     }
   `,
   template: `
-    <section id="skills">
+    <section class="sub-page" id="skills">
       <div class="container">
-        <h2><mat-icon fontIcon="lightbulb_outline"></mat-icon>Skills &amp; Technologies</h2>
-        <div class="skills">
+        <h2 class="triple-spaced"><mat-icon fontIcon="lightbulb_outline"></mat-icon>Skills &amp; Technologies</h2>
+        <div class="skills triple-spaced">
           <lib-skill
             description="Technologies and tools I work with"
             [tech]="[
@@ -54,7 +44,7 @@ import { SkillComponent } from './skill.component';
               'CSS',
               'Tailwind CSS',
               'Framer Motion',
-              'Redux'
+              'Redux',
             ]"
             title="Frontend Development"
           ></lib-skill>
@@ -69,7 +59,7 @@ import { SkillComponent } from './skill.component';
               'CSS',
               'Tailwind CSS',
               'Framer Motion',
-              'Redux'
+              'Redux',
             ]"
             title="Frontend Development"
           ></lib-skill>
@@ -84,7 +74,7 @@ import { SkillComponent } from './skill.component';
               'CSS',
               'Tailwind CSS',
               'Framer Motion',
-              'Redux'
+              'Redux',
             ]"
             title="Frontend Development"
           ></lib-skill>
@@ -99,7 +89,7 @@ import { SkillComponent } from './skill.component';
               'CSS',
               'Tailwind CSS',
               'Framer Motion',
-              'Redux'
+              'Redux',
             ]"
             title="Frontend Development"
           ></lib-skill>

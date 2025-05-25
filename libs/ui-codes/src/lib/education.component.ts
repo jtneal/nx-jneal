@@ -7,18 +7,9 @@ import { SchoolComponent } from './school.component';
   selector: 'lib-education',
   imports: [CommonModule, MatIconModule, SchoolComponent],
   styles: `
-    section {
-      scroll-margin-top: 6rem;
-    }
-
     .container {
       align-items: start;
       flex-direction: column;
-    }
-
-    h2 {
-      font-size: 1.875rem;
-      margin-top: 2rem;
     }
 
     mat-icon {
@@ -30,7 +21,6 @@ import { SchoolComponent } from './school.component';
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      margin-top: 2rem;
       width: 100%;
     }
 
@@ -39,10 +29,10 @@ import { SchoolComponent } from './school.component';
     }
   `,
   template: `
-    <section id="education">
+    <section class="sub-page" id="education">
       <div class="container">
-        <h2><mat-icon fontIcon="work_outline"></mat-icon>Education</h2>
-        <div class="schools">
+        <h2 class="triple-spaced"><mat-icon fontIcon="work_outline"></mat-icon>Education</h2>
+        <div class="schools triple-spaced">
           <lib-school
             dates="2011 - 2015"
             school="University of Technology"

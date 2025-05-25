@@ -24,7 +24,6 @@ import { DarkModeToggleComponent } from './dark-mode-toggle.component';
 
       :first-child {
         color: var(--foreground);
-        font-size: 1.25rem;
         font-weight: 700;
       }
 
@@ -49,7 +48,7 @@ import { DarkModeToggleComponent } from './dark-mode-toggle.component';
     <header>
       <div class="container">
         <nav class="text-small">
-          <a routerLink="/">JNeal</a>
+          <a class="text-large" routerLink="/">JNeal</a>
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
           <a class="red" routerLink="/codes" routerLinkActive="active">JNealCodes</a>
           <a class="blue" routerLink="/travels" routerLinkActive="active">JNealTravels</a>

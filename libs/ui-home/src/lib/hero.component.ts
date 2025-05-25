@@ -9,7 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
   styles: `
     section {
       align-items: center;
-      background-image: linear-gradient(to bottom right, var(--vibrant-start), var(--vibrant-middle), var(--vibrant-end));
+      background-image: linear-gradient(
+        to bottom right,
+        var(--vibrant-start),
+        var(--vibrant-middle),
+        var(--vibrant-end)
+      );
       display: flex;
       height: 100vh;
       padding-top: 4rem;
@@ -26,7 +31,6 @@ import { MatIconModule } from '@angular/material/icon';
 
     h1 {
       color: var(--white);
-      margin-bottom: 1rem;
 
       span {
         animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
@@ -58,13 +62,11 @@ import { MatIconModule } from '@angular/material/icon';
 
     p {
       color: rgb(255 255 255 / 0.9);
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
     }
 
     .button {
       background-color: var(--white) !important;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       color: var(--vibrant-end) !important;
     }
 
@@ -79,11 +81,11 @@ import { MatIconModule } from '@angular/material/icon';
       <div class="container">
         <article>
           <h1><span>Hi,</span><span>I'm</span><span>JNeal</span></h1>
-          <p>
+          <p class="text-large single-spaced">
             Welcome to my digital home where I share my passions for coding, traveling, and gaming. I've created
             distinct personas to help you navigate the different facets of my interests.
           </p>
-          <a class="button" href="#personas" mat-flat-button>
+          <a class="button double-spaced" href="#personas" mat-flat-button>
             Explore My Personas <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
           </a>
         </article>

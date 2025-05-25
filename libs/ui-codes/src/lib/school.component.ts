@@ -20,20 +20,12 @@ import { PillComponent } from '@nx-jneal/ui-components';
       display: flex;
       justify-content: space-between;
     }
-
-    h3 {
-      margin-bottom: 0.25rem;
-    }
-
-    p:last-child {
-      margin-top: 1.5rem;
-    }
   `,
   template: `
     <article>
       <h3>{{ title() }}</h3>
-      <p class="text-small">{{ school() }}</p>
-      <p>
+      <p class="text-small quarter-spaced">{{ school() }}</p>
+      <p class="double-spaced">
         <lib-pill theme="bright">{{ dates() }}</lib-pill>
       </p>
     </article>

@@ -44,22 +44,13 @@ import { ButtonComponent, PillComponent } from '@nx-jneal/ui-components';
       padding: 1.5rem;
     }
 
-    .pills {
-      margin-top: .25rem;
-    }
-
     lib-pill {
       margin: 0.5rem 0.5rem 0 0;
-    }
-
-    .description {
-      margin-top: 1.5rem;
     }
 
     .buttons {
       display: flex;
       gap: 1.5rem;
-      margin-top: 1.5rem;
     }
   `,
   template: `
@@ -67,13 +58,13 @@ import { ButtonComponent, PillComponent } from '@nx-jneal/ui-components';
       <img [alt]="description()" [src]="image()" />
       <div class="card-content">
         <h3>{{ title() }}</h3>
-        <p class="pills">
+        <p class="quarter-spaced">
           @for (item of tech(); track $index) {
             <lib-pill theme="dim">{{ item }}</lib-pill>
           }
         </p>
-        <p class="description">{{ description() }}</p>
-        <p class="buttons">
+        <p class="double-spaced">{{ description() }}</p>
+        <p class="buttons double-spaced">
           <lib-button [external]="true" icon="open_in_new" [link]="demo()" text="Demo"></lib-button>
           <lib-button [external]="true" icon="github" [link]="code()" text="Code"></lib-button>
         </p>

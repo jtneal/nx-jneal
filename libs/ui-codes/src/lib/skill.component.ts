@@ -21,14 +21,6 @@ import { PillComponent } from '@nx-jneal/ui-components';
       justify-content: space-between;
     }
 
-    h3 {
-      margin-bottom: 0.25rem;
-    }
-
-    p:last-child {
-      margin-top: 1rem;
-    }
-
     lib-pill {
       margin: 0.5rem 0.5rem 0 0;
     }
@@ -36,8 +28,8 @@ import { PillComponent } from '@nx-jneal/ui-components';
   template: `
     <article>
       <h3>{{ title() }}</h3>
-      <p class="text-small">{{ description() }}</p>
-      <p>
+      <p class="text-small quarter-spaced">{{ description() }}</p>
+      <p class="single-spaced">
         @for (item of tech(); track $index) {
           <lib-pill theme="dim">{{ item }}</lib-pill>
         }

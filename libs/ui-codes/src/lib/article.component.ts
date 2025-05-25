@@ -21,46 +21,13 @@ import { ButtonComponent } from '@nx-jneal/ui-components';
         }
       }
     }
-
-    h3 {
-      margin-bottom: 0.25rem;
-    }
-
-    .description {
-      margin-top: 1.5rem;
-    }
-
-    .buttons {
-      margin-top: 1.5rem;
-
-      a {
-        align-items: center;
-        background-color: var(--background);
-        border: 1px solid var(--background-muted);
-        border-radius: .5rem;
-        color: var(--foreground);
-        display: flex;
-        gap: 0.75rem;
-        justify-content: center;
-        padding: 0.5rem;
-
-        &:hover {
-          background-color: var(--background-muted);
-        }
-      }
-    }
-
-    svg {
-      height: 16px;
-      width: 16px;
-    }
   `,
   template: `
     <article>
       <h3>{{ title() }}</h3>
-      <p class="text-small">{{ date() }} &bull; {{ length() }} min read</p>
-      <p class="description">{{ description() }}</p>
-      <p class="buttons">
+      <p class="text-small quarter-spaced">{{ date() }} &bull; {{ length() }} min read</p>
+      <p class="double-spaced">{{ description() }}</p>
+      <p class="buttons double-spaced">
         <lib-button [external]="true" icon="open_in_new" link="#" text="Read on Medium"></lib-button>
       </p>
     </article>

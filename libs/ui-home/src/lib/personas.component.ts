@@ -16,26 +16,20 @@ import { PromoComponent } from './promo.component';
       flex-direction: column;
     }
 
-    h2 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-    }
-
     .promos {
       display: flex;
       gap: 1.5rem;
-      margin-top: 2rem;
     }
   `,
   template: `
     <section id="personas">
       <div class="container">
-        <h2 class="text-center">My Personas</h2>
-        <p class="text-large text-center">
+        <h2 class="huge text-center">My Personas</h2>
+        <p class="text-large text-center double-spaced">
           I've created these personas to separate my wildly varying interests and provide focused content for different
           communities.
         </p>
-        <div class="promos">
+        <div class="promos triple-spaced">
           <lib-promo
             description="Software engineering, programming tutorials, and tech insights."
             image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"

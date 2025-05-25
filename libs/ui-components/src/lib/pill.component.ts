@@ -12,7 +12,6 @@ import { Component, input } from '@angular/core';
     span {
       border-radius: 0.75rem;
       display: inline-block;
-      font-size: 0.75rem;
       font-weight: 600;
       padding: 0.1rem 0.5rem;
     }
@@ -27,7 +26,7 @@ import { Component, input } from '@angular/core';
       color: var(--background);
     }
   `,
-  template: `<span [class]="theme()"><ng-content></ng-content></span>`,
+  template: `<span [class]="theme()" class="text-tiny"><ng-content></ng-content></span>`,
 })
 export class PillComponent {
   public theme = input.required<'dim' | 'bright'>();

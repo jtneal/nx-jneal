@@ -7,10 +7,6 @@ import { ProjectComponent } from './project.component';
   selector: 'lib-projects',
   imports: [CommonModule, MatIconModule, ProjectComponent],
   styles: `
-    section {
-      scroll-margin-top: 6rem;
-    }
-
     .container {
       align-items: start;
       flex-direction: column;
@@ -19,11 +15,6 @@ import { ProjectComponent } from './project.component';
     .projects {
       display: flex;
       gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    h2 {
-      font-size: 1.875rem;
     }
 
     mat-icon {
@@ -32,10 +23,10 @@ import { ProjectComponent } from './project.component';
     }
   `,
   template: `
-    <section id="portfolio">
+    <section class="sub-page" id="portfolio">
       <div class="container">
         <h2><mat-icon fontIcon="code"></mat-icon>Featured Projects</h2>
-        <div class="projects">
+        <div class="projects triple-spaced">
           <lib-project
             code="#"
             demo="#"

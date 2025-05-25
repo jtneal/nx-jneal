@@ -20,8 +20,6 @@ import { Component } from '@angular/core';
 
     p {
       color: var(--foreground-muted);
-      font-size: 1.25rem;
-      margin-top: 1rem;
     }
 
     img {
@@ -36,13 +34,13 @@ import { Component } from '@angular/core';
     <section>
       <div class="container">
         <article>
-          <h2>About Me</h2>
-          <p>
+          <h2 class="big">About Me</h2>
+          <p class="text-large single-spaced">
             I'm a multifaceted individual with a passion for technology, exploration, and gaming. My diverse interests
             have led me to create distinct personas that allow me to connect with different communities while
             maintaining my authentic self.
           </p>
-          <p>
+          <p class="text-large single-spaced">
             Whether I'm coding a new project, exploring ancient ruins, or diving into a new game, I bring the same level
             of enthusiasm and dedication to everything I do.
           </p>

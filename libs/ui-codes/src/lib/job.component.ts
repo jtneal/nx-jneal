@@ -21,13 +21,8 @@ import { PillComponent } from '@nx-jneal/ui-components';
       justify-content: space-between;
     }
 
-    h3 {
-      margin-bottom: 0.25rem;
-    }
-
     .content {
       color: var(--foreground);
-      margin-top: 1.5rem;
     }
   `,
   template: `
@@ -35,13 +30,13 @@ import { PillComponent } from '@nx-jneal/ui-components';
       <header>
         <div>
           <h3>{{ title() }}</h3>
-          <p class="text-small">{{ company() }}</p>
+          <p class="text-small quarter-spaced">{{ company() }}</p>
         </div>
         <aside>
           <lib-pill theme="bright">{{ dates() }}</lib-pill>
         </aside>
       </header>
-      <div class="content">
+      <div class="content double-spaced">
         <ng-content></ng-content>
       </div>
     </article>

@@ -157,7 +157,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
+
+  &.big {
+    font-size: 2.25rem;
+  }
+
+  &.huge {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -186,6 +194,10 @@ a {
   padding: 0 1.5rem;
 }
 
+.text-tiny {
+  font-size: 0.75rem;
+}
+
 .text-small {
   font-size: 0.875rem;
 }
@@ -196,4 +208,24 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.quarter-spaced {
+  margin-top: 0.25rem;
+}
+
+.single-spaced {
+  margin-top: 1rem;
+}
+
+.double-spaced {
+  margin-top: 1.5rem;
+}
+
+.triple-spaced {
+  margin-top: 2rem;
+}
+
+.sub-page {
+  scroll-margin-top: 6rem;
 }

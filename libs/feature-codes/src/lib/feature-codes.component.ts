@@ -1,7 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { ArticlesComponent, EducationComponent, ExperienceComponent, ProjectsComponent, SkillsComponent } from '@nx-jneal/ui-codes';
+import {
+  ArticlesComponent,
+  EducationComponent,
+  ExperienceComponent,
+  ProjectsComponent,
+  SkillsComponent,
+} from '@nx-jneal/ui-codes';
 import { SubHeroComponent, SubNavComponent, SubNavLink } from '@nx-jneal/ui-components';
 
 @Component({

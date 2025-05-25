@@ -7,18 +7,9 @@ import { ArticleComponent } from './article.component';
   selector: 'lib-articles',
   imports: [CommonModule, MatIconModule, ArticleComponent],
   styles: `
-    section {
-      scroll-margin-top: 6rem;
-    }
-
     .container {
       align-items: start;
       flex-direction: column;
-    }
-
-    h2 {
-      font-size: 1.875rem;
-      margin-top: 2rem;
     }
 
     mat-icon {
@@ -30,7 +21,6 @@ import { ArticleComponent } from './article.component';
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      margin-top: 2rem;
       width: 100%;
     }
 
@@ -39,10 +29,10 @@ import { ArticleComponent } from './article.component';
     }
   `,
   template: `
-    <section id="articles">
+    <section class="sub-page" id="articles">
       <div class="container">
-        <h2><mat-icon fontIcon="list_alt"></mat-icon>Articles</h2>
-        <div class="articles">
+        <h2 class="triple-spaced"><mat-icon fontIcon="list_alt"></mat-icon>Articles</h2>
+        <div class="articles triple-spaced">
           <lib-article
             date="May 10, 2023"
             description="Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS."
