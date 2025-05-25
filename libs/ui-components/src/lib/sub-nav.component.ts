@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, inject, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 export interface SubNavLink {
@@ -19,6 +19,7 @@ export interface SubNavLink {
       padding: 0.5rem 0;
       position: sticky;
       top: 4rem;
+      z-index: 100;
     }
 
     .container {
@@ -26,10 +27,18 @@ export interface SubNavLink {
       justify-content: left;
     }
 
-    a {
+    button {
       align-items: center;
+      background-color: initial;
+      border: none;
+      color: var(--foreground-alt);
+      cursor: pointer;
       display: flex;
       font-weight: 500;
+
+      &:hover {
+        color: var(--foreground);
+      }
     }
 
     mat-icon {
@@ -40,15 +49,20 @@ export interface SubNavLink {
     <nav>
       <div class="container">
         @for (link of links(); track $index) {
-          <a class="text-small" [href]="link.link">
+          <button class="text-small" (click)="scrollTo(link.link)">
             <mat-icon [fontIcon]="link.icon"></mat-icon>
             <span>{{ link.title }}</span>
-          </a>
+          </button>
         }
       </div>
     </nav>
   `,
 })
 export class SubNavComponent {
+  private readonly document = inject(DOCUMENT);
   public links = input.required<SubNavLink[]>();
+
+  public scrollTo(id: string): void {
+    this.document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

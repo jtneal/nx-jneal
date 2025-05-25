@@ -12,9 +12,7 @@ describe(SchoolComponent.name, () => {
 
     fixture = TestBed.createComponent(SchoolComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('company', 'company');
-    fixture.componentRef.setInput('dates', 'dates');
-    fixture.componentRef.setInput('title', 'title');
+    fixture.componentRef.setInput('school', { company: 'company', dates: 'dates', title: 'title' });
     fixture.detectChanges();
   });
 

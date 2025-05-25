@@ -12,12 +12,14 @@ describe(ProjectComponent.name, () => {
 
     fixture = TestBed.createComponent(ProjectComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('code', 'code');
-    fixture.componentRef.setInput('demo', 'demo');
-    fixture.componentRef.setInput('description', 'description');
-    fixture.componentRef.setInput('image', 'image');
-    fixture.componentRef.setInput('tech', []);
-    fixture.componentRef.setInput('title', 'title');
+    fixture.componentRef.setInput('project', {
+      code: 'code',
+      demo: 'demo',
+      description: 'description',
+      image: 'image',
+      tech: [],
+      title: 'title',
+    });
     fixture.detectChanges();
   });
 

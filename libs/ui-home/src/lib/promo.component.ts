@@ -16,22 +16,23 @@ import { RouterModule } from '@angular/router';
       border: 1px solid;
       border-radius: 0.5rem;
       display: block;
+      overflow: hidden;
       transition: transform 0.2s ease-out;
 
       &:hover {
         transform: translateY(-5px);
+
+        img {
+          transform: scale(1.05);
+        }
       }
     }
 
     img {
       border-radius: 0.5rem 0.5rem 0 0;
       height: 12rem;
+      transition: transform 0.2s ease-out;
       width: 100%;
-    }
-
-    article {
-      border-radius: 0 0 0.5rem 0.5rem;
-      padding: 1.5rem;
     }
 
     p {
@@ -126,7 +127,7 @@ import { RouterModule } from '@angular/router';
   template: `
     <a [class]="theme()" [routerLink]="link()">
       <img alt="photo representing {{ title() }}" [src]="image()" />
-      <article>
+      <article class="card-content">
         <h3>{{ title() }}</h3>
         <p>{{ description() }}</p>
         <p class="button">

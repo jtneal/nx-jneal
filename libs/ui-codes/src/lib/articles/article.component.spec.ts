@@ -12,9 +12,13 @@ describe(ArticleComponent.name, () => {
 
     fixture = TestBed.createComponent(ArticleComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('company', 'company');
-    fixture.componentRef.setInput('dates', 'dates');
-    fixture.componentRef.setInput('title', 'title');
+    fixture.componentRef.setInput('article', {
+      date: 'date',
+      description: 'description',
+      length: 'legnth',
+      link: 'link',
+      title: 'title',
+    });
     fixture.detectChanges();
   });
 

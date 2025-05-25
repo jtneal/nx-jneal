@@ -13,7 +13,7 @@ import { PromoComponent } from './promo.component';
     }
 
     .container {
-      flex-direction: column;
+      align-items: center;
     }
 
     .promos {
@@ -23,9 +23,9 @@ import { PromoComponent } from './promo.component';
   `,
   template: `
     <section id="personas">
-      <div class="container">
-        <h2 class="huge text-center">My Personas</h2>
-        <p class="text-large text-center double-spaced">
+      <div class="container column">
+        <h2 class="huge">My Personas</h2>
+        <p class="text-large double-spaced">
           I've created these personas to separate my wildly varying interests and provide focused content for different
           communities.
         </p>

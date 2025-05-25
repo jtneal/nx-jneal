@@ -1,11 +1,12 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { FancyFadeInDirective } from '@nx-jneal/ui-components';
 
 @Component({
   selector: 'lib-hero',
-  imports: [CommonModule, MatButtonModule, MatIconModule],
+  imports: [CommonModule, FancyFadeInDirective, MatButtonModule, MatIconModule],
   styles: `
     section {
       align-items: center;
@@ -31,40 +32,13 @@ import { MatIconModule } from '@angular/material/icon';
 
     h1 {
       color: var(--white);
-
-      span {
-        animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-        display: inline-block;
-        margin-right: 1rem;
-        opacity: 0;
-        transform: translateY(20px);
-
-        &:nth-child(1) {
-          animation-delay: 0.04s;
-        }
-
-        &:nth-child(2) {
-          animation-delay: 0.16s;
-        }
-
-        &:nth-child(3) {
-          animation-delay: 0.28s;
-        }
-      }
-
-      @keyframes fadeInUp {
-        to {
-          opacity: 1;
-          transform: none;
-        }
-      }
     }
 
     p {
       color: rgb(255 255 255 / 0.9);
     }
 
-    .button {
+    button {
       background-color: var(--white) !important;
       border-radius: 0.5rem;
       color: var(--vibrant-end) !important;
@@ -80,18 +54,24 @@ import { MatIconModule } from '@angular/material/icon';
     <section>
       <div class="container">
         <article>
-          <h1><span>Hi,</span><span>I'm</span><span>JNeal</span></h1>
+          <h1 libFancyFadeIn>Hi, I'm JNeal</h1>
           <p class="text-large single-spaced">
             Welcome to my digital home where I share my passions for coding, traveling, and gaming. I've created
             distinct personas to help you navigate the different facets of my interests.
           </p>
-          <a class="button double-spaced" href="#personas" mat-flat-button>
+          <button class="double-spaced" (click)="scrollToPersonas()" mat-flat-button>
             Explore My Personas <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
-          </a>
+          </button>
         </article>
         <img alt="photo of JNeal" src="/images/photo-of-jneal.jpg" />
       </div>
     </section>
   `,
 })
-export class HeroComponent {}
+export class HeroComponent {
+  private readonly document = inject(DOCUMENT);
+
+  public scrollToPersonas(): void {
+    this.document.getElementById('personas')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}

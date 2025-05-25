@@ -4,6 +4,7 @@
 
 export * from './lib/button.component';
 export * from './lib/dark-mode-toggle.component';
+export * from './lib/fancyFadeIn.directive';
 export * from './lib/pill.component';
 export * from './lib/site-footer.component';
 export * from './lib/site-header.component';

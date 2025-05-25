@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
       border-radius: 0.5rem;
       color: var(--foreground);
       display: flex;
+      font-weight: 500;
       gap: 0.75rem;
       justify-content: center;
       padding: 0.5rem 1rem;
