@@ -1,34 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { ArticlesComponent, EducationComponent, ExperienceComponent, ProjectsComponent, SkillsComponent } from '@nx-jneal/ui-codes';
 import { SubHeroComponent, SubNavComponent, SubNavLink } from '@nx-jneal/ui-components';
-import { ProjectsComponent } from '@nx-jneal/ui-codes';
 
 @Component({
   selector: 'lib-feature-codes',
-  imports: [CommonModule, MatIconModule, ProjectsComponent, SubHeroComponent, SubNavComponent],
+  imports: [
+    ArticlesComponent,
+    CommonModule,
+    EducationComponent,
+    ExperienceComponent,
+    MatIconModule,
+    ProjectsComponent,
+    SkillsComponent,
+    SubHeroComponent,
+    SubNavComponent,
+  ],
   styles: `
-    .container {
-      align-items: start;
-      background-color: var(--background-alt);
-      flex-direction: column;
-      padding: 3rem 0;
-      scroll-margin-top: 6rem;
-    }
-
-    .projects {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    h2 {
-      font-size: 1.875rem;
-    }
-
-    mat-icon {
-      color: var(--red-bright);
-      margin-right: 0.5rem;
+    .sub-content {
+      padding: 2rem 0;
     }
   `,
   template: `
@@ -38,7 +29,13 @@ import { ProjectsComponent } from '@nx-jneal/ui-codes';
       title="JNealCodes"
     ></lib-sub-hero>
     <lib-sub-nav [links]="links"></lib-sub-nav>
-    <lib-projects></lib-projects>
+    <div class="sub-content">
+      <lib-projects></lib-projects>
+      <lib-experience></lib-experience>
+      <lib-education></lib-education>
+      <lib-skills></lib-skills>
+      <lib-articles></lib-articles>
+    </div>
   `,
 })
 export class FeatureCodesComponent {

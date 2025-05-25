@@ -8,7 +8,6 @@ import { ProjectComponent } from './project.component';
   imports: [CommonModule, MatIconModule, ProjectComponent],
   styles: `
     section {
-      padding: 3rem 0;
       scroll-margin-top: 6rem;
     }
 
@@ -29,7 +28,7 @@ import { ProjectComponent } from './project.component';
 
     mat-icon {
       color: var(--red-bright);
-      margin-right: 0.5rem;
+      margin-right: 0.75rem;
     }
   `,
   template: `
@@ -37,9 +36,30 @@ import { ProjectComponent } from './project.component';
       <div class="container">
         <h2><mat-icon fontIcon="code"></mat-icon>Featured Projects</h2>
         <div class="projects">
-          <lib-project></lib-project>
-          <lib-project></lib-project>
-          <lib-project></lib-project>
+          <lib-project
+            code="#"
+            demo="#"
+            description="A full-stack web application built with Next.js and TypeScript"
+            image="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop"
+            [tech]="['Next.js', 'TypeScript', 'Tailwind CSS']"
+            title="Project Alpha"
+          ></lib-project>
+          <lib-project
+            code="#"
+            demo="#"
+            description="A full-stack web application built with Next.js and TypeScript"
+            image="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop"
+            [tech]="['Next.js', 'TypeScript', 'Tailwind CSS']"
+            title="Project Alpha"
+          ></lib-project>
+          <lib-project
+            code="#"
+            demo="#"
+            description="A full-stack web application built with Next.js and TypeScript"
+            image="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop"
+            [tech]="['Next.js', 'TypeScript', 'Tailwind CSS']"
+            title="Project Alpha"
+          ></lib-project>
         </div>
       </div>
     </section>

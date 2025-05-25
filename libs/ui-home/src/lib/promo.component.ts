@@ -141,6 +141,6 @@ export class PromoComponent {
   public description = input.required<string>();
   public image = input.required<string>();
   public link = input.required<string>();
-  public theme = input.required<string>();
+  public theme = input.required<'red' | 'green' | 'blue'>();
   public title = input.required<string>();
 }
