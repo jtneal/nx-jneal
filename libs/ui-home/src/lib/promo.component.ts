@@ -7,11 +7,6 @@ import { RouterModule } from '@angular/router';
   selector: 'lib-promo',
   imports: [CommonModule, MatIconModule, RouterModule],
   styles: `
-    :host {
-      display: block;
-      flex: 0 1 calc((100% - 3rem) / 3);
-    }
-
     a {
       border: 1px solid;
       border-radius: 0.5rem;

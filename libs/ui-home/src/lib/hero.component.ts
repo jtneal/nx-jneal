@@ -2,11 +2,11 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { FancyFadeInDirective } from '@nx-jneal/ui-components';
+import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-components';
 
 @Component({
   selector: 'lib-hero',
-  imports: [CommonModule, FancyFadeInDirective, MatButtonModule, MatIconModule],
+  imports: [ButtonComponent, CommonModule, FancyFadeInDirective, MatButtonModule, MatIconModule],
   styles: `
     section {
       align-items: center;
@@ -59,9 +59,7 @@ import { FancyFadeInDirective } from '@nx-jneal/ui-components';
             Welcome to my digital home where I share my passions for coding, traveling, and gaming. I've created
             distinct personas to help you navigate the different facets of my interests.
           </p>
-          <button class="double-spaced" (click)="scrollToPersonas()" mat-flat-button>
-            Explore My Personas <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
-          </button>
+          <lib-button class="double-spaced" (click)="scrollToPersonas()" [external]="false" icon="arrow_forward" link="" text="Explore My Personas" theme="bright"></lib-button>
         </article>
         <img alt="photo of JNeal" src="/images/photo-of-jneal.jpg" />
       </div>

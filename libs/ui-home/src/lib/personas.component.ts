@@ -15,11 +15,6 @@ import { PromoComponent } from './promo.component';
     .container {
       align-items: center;
     }
-
-    .promos {
-      display: flex;
-      gap: 1.5rem;
-    }
   `,
   template: `
     <section id="personas">
@@ -29,7 +24,7 @@ import { PromoComponent } from './promo.component';
           I've created these personas to separate my wildly varying interests and provide focused content for different
           communities.
         </p>
-        <div class="promos triple-spaced">
+        <div class="columns columns-3 triple-spaced">
           <lib-promo
             description="Software engineering, programming tutorials, and tech insights."
             image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
