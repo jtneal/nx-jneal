@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { ButtonComponent } from '@nx-jneal/ui-components';
+import { ButtonComponent } from '../button.component';
 
 export interface Article {
   date: string;

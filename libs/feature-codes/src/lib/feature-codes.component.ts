@@ -2,8 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import {
-  Article,
-  ArticlesComponent,
   Job,
   JobsComponent,
   Project,
@@ -13,7 +11,7 @@ import {
   Skill,
   SkillsComponent,
 } from '@nx-jneal/ui-codes';
-import { SubHeroComponent, SubNavComponent, SubNavLink } from '@nx-jneal/ui-components';
+import { Article, ArticlesComponent, SubHeroComponent, SubNavComponent, SubNavLink } from '@nx-jneal/ui-components';
 
 @Component({
   selector: 'lib-feature-codes',
@@ -49,6 +47,14 @@ export class FeatureCodesComponent {
     title: 'JNealCodes',
   };
 
+  public links: SubNavLink[] = [
+    { icon: 'code', link: 'projects', title: 'Projects' },
+    { icon: 'work_outline', link: 'experience', title: 'Experience' },
+    { icon: 'work_outline', link: 'education', title: 'Education' },
+    { icon: 'lightbulb_outline', link: 'skills', title: 'Skills' },
+    { icon: 'list_alt', link: 'articles', title: 'Articles' },
+  ];
+
   public projects: Project[] = [
     {
       code: '#',
@@ -74,14 +80,6 @@ export class FeatureCodesComponent {
       tech: ['Python', 'TransorFlow', 'Keras'],
       title: 'Project Gamma',
     },
-  ];
-
-  public links: SubNavLink[] = [
-    { icon: 'code', link: 'projects', title: 'Projects' },
-    { icon: 'work_outline', link: 'experience', title: 'Experience' },
-    { icon: 'work_outline', link: 'education', title: 'Education' },
-    { icon: 'lightbulb_outline', link: 'skills', title: 'Skills' },
-    { icon: 'list_alt', link: 'articles', title: 'Articles' },
   ];
 
   public jobs: Job[] = [
@@ -132,28 +130,21 @@ export class FeatureCodesComponent {
       description: 'Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.',
       length: '8',
       link: '#',
-      title: 'Frontend Development',
+      title: 'Building a Modern Web Application with Next.js',
     },
     {
-      date: 'May 10, 2023',
-      description: 'Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.',
-      length: '8',
+      date: 'April 22, 2023',
+      description: 'Exploring the benefits and use cases of React Server Components in modern web development.',
+      length: '6',
       link: '#',
-      title: 'Frontend Development',
+      title: 'The Power of Server Components in React',
     },
     {
-      date: 'May 10, 2023',
-      description: 'Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.',
-      length: '8',
+      date: 'March 15, 2023',
+      description: 'A comprehensive look at modern state management solutions for React applications.',
+      length: '10',
       link: '#',
-      title: 'Frontend Development',
-    },
-    {
-      date: 'May 10, 2023',
-      description: 'Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.',
-      length: '8',
-      link: '#',
-      title: 'Frontend Development',
+      title: 'State Management in 2023: Beyond Redux',
     },
   ];
 }
