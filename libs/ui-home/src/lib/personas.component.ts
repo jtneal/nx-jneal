@@ -7,7 +7,6 @@ import { PromoComponent } from './promo.component';
   imports: [CommonModule, PromoComponent],
   styles: `
     section {
-      background-color: var(--background-alt);
       padding: 3rem 0;
       scroll-margin-top: 4rem;
     }

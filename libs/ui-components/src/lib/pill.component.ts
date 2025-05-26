@@ -17,7 +17,7 @@ import { Component, input } from '@angular/core';
     }
 
     .dim {
-      background-color: var(--background-alt);
+      background-color: var(--background-ter);
       color: var(--foreground);
     }
 

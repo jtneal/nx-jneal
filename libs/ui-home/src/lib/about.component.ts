@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
   styles: `
     section {
-      padding: 4rem 0;
+      background-color: var(--background-alt);
+      padding: 3rem 0;
     }
 
     .container {
