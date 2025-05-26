@@ -11,6 +11,7 @@
   "include": [
     "src/**/*.ts",
     "../ui-codes/src/lib/project.component.spec.ts",
-    "../ui-codes/src/lib/project.component.ts"
-, "../ui-travels/src/lib/photos.component.ts"  ]
+    "../ui-codes/src/lib/project.component.ts",
+    "../ui-travels/src/lib/photos.component.ts"
+  ]
 }

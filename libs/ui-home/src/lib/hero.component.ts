@@ -59,7 +59,15 @@ import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-components';
             Welcome to my digital home where I share my passions for coding, traveling, and gaming. I've created
             distinct personas to help you navigate the different facets of my interests.
           </p>
-          <lib-button class="double-spaced" (click)="scrollToPersonas()" [external]="false" icon="arrow_forward" link="" text="Explore My Personas" theme="bright"></lib-button>
+          <lib-button
+            class="double-spaced"
+            (click)="scrollToPersonas()"
+            [external]="false"
+            icon="arrow_forward"
+            link=""
+            text="Explore My Personas"
+            theme="bright"
+          ></lib-button>
         </article>
         <img alt="photo of JNeal" src="/images/photo-of-jneal.jpg" />
       </div>
