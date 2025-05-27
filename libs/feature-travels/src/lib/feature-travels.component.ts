@@ -20,15 +20,15 @@ import { Photo, PhotosComponent, ResearchComponent } from '@nx-jneal/ui-travels'
 })
 export class FeatureTravelsComponent {
   public hero = {
-    description: 'Travel adventures, spirituality, and explorations of UAP/UFO phenomena',
+    description: 'Photo gallery, explorations of UAP/UFO phenomena, and articles on related topics.',
     image: 'https://images.unsplash.com/photo-1608546043931-6c9678ea9feb?q=80&w=2069&auto=format&fit=crop',
     title: 'JNealTravels',
   };
 
   public links: SubNavLink[] = [
-    { icon: 'photo_camera', link: 'photos', title: 'Photo Gallery' },
+    { icon: 'jneal_cam', link: 'photos', title: 'Photo Gallery' },
     { icon: 'circle', link: 'research', title: 'UAP/UFO Research' },
-    { icon: 'list_alt', link: 'articles', title: 'Articles' },
+    { icon: 'jneal_book', link: 'articles', title: 'Articles' },
   ];
 
   public albums: string[] = ['All Photos', 'Europe 2023', 'Egypt 2022'];

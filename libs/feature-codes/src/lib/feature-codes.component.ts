@@ -42,17 +42,17 @@ import { Article, ArticlesComponent, SubHeroComponent, SubNavComponent, SubNavLi
 })
 export class FeatureCodesComponent {
   public hero = {
-    description: 'Software engineering, programming tutorials, and tech insights',
+    description: 'Featured projects, work experience, education, skills & technologies, and articles.',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
     title: 'JNealCodes',
   };
 
   public links: SubNavLink[] = [
-    { icon: 'code', link: 'projects', title: 'Projects' },
-    { icon: 'work_outline', link: 'experience', title: 'Experience' },
-    { icon: 'work_outline', link: 'education', title: 'Education' },
-    { icon: 'lightbulb_outline', link: 'skills', title: 'Skills' },
-    { icon: 'list_alt', link: 'articles', title: 'Articles' },
+    { icon: 'jneal_code', link: 'projects', title: 'Projects' },
+    { icon: 'jneal_work', link: 'experience', title: 'Experience' },
+    { icon: 'jneal_work', link: 'education', title: 'Education' },
+    { icon: 'jneal_tech', link: 'skills', title: 'Skills' },
+    { icon: 'jneal_book', link: 'articles', title: 'Articles' },
   ];
 
   public projects: Project[] = [

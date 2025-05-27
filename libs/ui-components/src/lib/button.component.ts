@@ -36,22 +36,22 @@ import { RouterModule } from '@angular/router';
       <a [class]="theme()" class="text-small" href="#" mat-flat-button rel="noopener noreferrer" target="_blank">
         {{ text() }}
         @if (icon() === 'open_in_new') {
-          <mat-icon iconPositionEnd svgIcon="jneal_external"></mat-icon>
+          <mat-icon iconPositionEnd svgIcon="jneal_new"></mat-icon>
         } @else if (icon() === 'github') {
-          <mat-icon iconPositionEnd svgIcon="jneal_github"></mat-icon>
+          <mat-icon iconPositionEnd svgIcon="jneal_git"></mat-icon>
         } @else if (icon() === 'arrow_forward') {
-          <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
+          <mat-icon svgIcon="jneal_next" iconPositionEnd></mat-icon>
         }
       </a>
     } @else {
       <a [class]="theme()" class="text-small" mat-flat-button [routerLink]="[link]">
         {{ text() }}
         @if (icon() === 'open_in_new') {
-          <mat-icon iconPositionEnd svgIcon="jneal_external"></mat-icon>
+          <mat-icon iconPositionEnd svgIcon="jneal_new"></mat-icon>
         } @else if (icon() === 'github') {
-          <mat-icon iconPositionEnd svgIcon="jneal_github"></mat-icon>
+          <mat-icon iconPositionEnd svgIcon="jneal_git"></mat-icon>
         } @else if (icon() === 'arrow_forward') {
-          <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
+          <mat-icon svgIcon="jneal_next" iconPositionEnd></mat-icon>
         }
       </a>
     }

@@ -9,7 +9,7 @@ import { Project, ProjectComponent } from './project.component';
   template: `
     <section class="sub-page-large " id="projects">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon fontIcon="code"></mat-icon>Featured Projects</h2>
+        <h2 class="icon-heading"><mat-icon svgIcon="jneal_code"></mat-icon>Featured Projects</h2>
         <div class="columns columns-3 triple-spaced">
           @for (project of projects(); track $index) {
             <lib-project [project]="project"></lib-project>

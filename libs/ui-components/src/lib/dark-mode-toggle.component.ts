@@ -37,8 +37,8 @@ import { MatIconModule } from '@angular/material/icon';
   `,
   template: `
     <button (click)="toggleDarkMode()">
-      <mat-icon fontIcon="light_mode"></mat-icon>
-      <mat-icon fontIcon="dark_mode"></mat-icon>
+      <mat-icon svgIcon="jneal_sun"></mat-icon>
+      <mat-icon svgIcon="jneal_moon"></mat-icon>
       <mat-icon [class.dark-mode]="darkMode" fontIcon="circle"></mat-icon>
     </button>
   `,

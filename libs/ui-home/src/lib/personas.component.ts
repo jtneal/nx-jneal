@@ -25,21 +25,21 @@ import { PromoComponent } from './promo.component';
         </p>
         <div class="columns columns-3 triple-spaced">
           <lib-promo
-            description="Software engineering, programming tutorials, and tech insights."
+            description="Featured projects, work experience, education, skills & technologies, and articles."
             image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
             link="/codes"
             theme="red"
             title="JNealCodes"
           ></lib-promo>
           <lib-promo
-            description="Travel adventures, spirituality, and explorations of UAP/UFO phenomena."
+            description="Photo gallery, explorations of UAP/UFO phenomena, and articles on related topics."
             image="https://images.unsplash.com/photo-1608546043931-6c9678ea9feb?q=80&w=2069&auto=format&fit=crop"
             link="/travels"
             theme="blue"
             title="JNealTravels"
           ></lib-promo>
           <lib-promo
-            description="Gaming experiences, setups, and discussions about my favorite titles."
+            description="My gaming setup, recently played games, past favorites, and gaming articles."
             image="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=2057&auto=format&fit=crop"
             link="/games"
             theme="green"

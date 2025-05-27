@@ -21,15 +21,15 @@ import { GamesComponent, SetupComponent } from '@nx-jneal/ui-games';
 })
 export class FeatureGamesComponent {
   public hero = {
-    description: 'Gaming experiences, setups, and discussions about my favorite titles',
+    description: 'My gaming setup, recently played games, past favorites, and gaming articles.',
     image: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=2057&auto=format&fit=crop',
     title: 'JNealGames',
   };
 
   public links: SubNavLink[] = [
-    { icon: 'monitor', link: 'setup', title: 'Gaming Setup' },
-    { icon: 'sports_esports', link: 'games', title: 'My Games' },
-    { icon: 'list_alt', link: 'articles', title: 'Articles' },
+    { icon: 'jneal_pc', link: 'setup', title: 'Gaming Setup' },
+    { icon: 'jneal_game', link: 'games', title: 'My Games' },
+    { icon: 'jneal_book', link: 'articles', title: 'Articles' },
   ];
 
   public articles: Article[] = [

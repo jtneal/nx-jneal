@@ -10,7 +10,7 @@ import { Skill, SkillComponent } from './skill.component';
     <section class="sub-page" id="skills">
       <div class="container column">
         <h2 class="icon-heading triple-spaced">
-          <mat-icon fontIcon="lightbulb_outline"></mat-icon>Skills &amp; Technologies
+          <mat-icon svgIcon="jneal_tech"></mat-icon>Skills &amp; Technologies
         </h2>
         <div class="columns columns-2 triple-spaced">
           @for (skill of skills(); track $index) {

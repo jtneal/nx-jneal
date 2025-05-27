@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
   template: `
     <section class="sub-page" id="research">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon fontIcon="circle"></mat-icon>UAP/UFO Research</h2>
+        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_ufo"></mat-icon>UAP/UFO Research</h2>
         <div class="columns columns-2 triple-spaced">
           <main>
             <p>

@@ -127,7 +127,7 @@ import { RouterModule } from '@angular/router';
         <p>{{ description() }}</p>
         <p class="button">
           <span>Explore</span>
-          <mat-icon fontIcon="arrow_forward" iconPositionEnd></mat-icon>
+          <mat-icon svgIcon="jneal_next" iconPositionEnd></mat-icon>
         </p>
       </article>
     </a>

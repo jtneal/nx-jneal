@@ -50,7 +50,7 @@ export interface SubNavLink {
       <div class="container">
         @for (link of links(); track $index) {
           <button class="text-small" (click)="scrollTo(link.link)">
-            <mat-icon [fontIcon]="link.icon"></mat-icon>
+            <mat-icon [svgIcon]="link.icon"></mat-icon>
             <span>{{ link.title }}</span>
           </button>
         }

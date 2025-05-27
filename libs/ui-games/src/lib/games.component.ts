@@ -17,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
   template: `
     <section class="sub-page-large triple-spaced" id="games">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon fontIcon="sports_esports"></mat-icon>My Games</h2>
+        <h2 class="icon-heading"><mat-icon svgIcon="jneal_game"></mat-icon>My Games</h2>
         <h3 class="text-larger triple-spaced">Recently Played</h3>
         <div class="columns columns-4 triple-spaced">
           <article class="card with-photo">

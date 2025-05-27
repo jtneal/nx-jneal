@@ -73,7 +73,7 @@ export interface Photo {
   template: `
     <section class="sub-page-large" id="photos">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon fontIcon="photo_camera"></mat-icon>Photo Gallery</h2>
+        <h2 class="icon-heading"><mat-icon svgIcon="jneal_cam"></mat-icon>Photo Gallery</h2>
         <p class="albums double-spaced">
           @for (album of albums(); track $index) {
             <button [class.selected]="selected === $index" (click)="selected = $index" mat-flat-button>

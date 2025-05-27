@@ -9,7 +9,7 @@ import { Article, ArticleComponent } from './article.component';
   template: `
     <section class="sub-page" id="articles">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon fontIcon="list_alt"></mat-icon>Articles</h2>
+        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_book"></mat-icon>Articles</h2>
         <div class="columns columns-3 triple-spaced">
           @for (article of articles(); track $index) {
             <lib-article [article]="article"></lib-article>

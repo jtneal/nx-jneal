@@ -34,7 +34,7 @@ import { MatIconModule } from '@angular/material/icon';
   template: `
     <section class="sub-page-large" id="setup">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon fontIcon="monitor"></mat-icon>My Gaming Setup</h2>
+        <h2 class="icon-heading"><mat-icon svgIcon="jneal_pc"></mat-icon>My Gaming Setup</h2>
         <div class="columns columns-2 triple-spaced">
           <main>
             <p>

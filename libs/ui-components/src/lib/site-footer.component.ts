@@ -30,13 +30,13 @@ import { MatIconModule } from '@angular/material/icon';
         </p>
         <nav>
           <a href="https://x.com/JasonNeal" rel="noopener noreferrer" target="_blank">
-            <mat-icon svgIcon="jneal_social_x"></mat-icon>
+            <mat-icon svgIcon="jneal_x"></mat-icon>
           </a>
           <a href="https://github.com/jtneal" rel="noopener noreferrer" target="_blank">
-            <mat-icon svgIcon="jneal_social_github"></mat-icon>
+            <mat-icon svgIcon="jneal_git"></mat-icon>
           </a>
           <a href="https://www.linkedin.com/in/jasontneal" rel="noopener noreferrer" target="_blank">
-            <mat-icon svgIcon="jneal_social_linkedin"></mat-icon>
+            <mat-icon svgIcon="jneal_in"></mat-icon>
           </a>
         </nav>
       </div>
