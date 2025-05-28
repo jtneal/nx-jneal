@@ -9,7 +9,7 @@ import { School, SchoolComponent } from './school.component';
   template: `
     <section class="sub-page" id="education">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_work"></mat-icon>Education</h2>
+        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_cap"></mat-icon>Education</h2>
         <div class="columns columns-2 triple-spaced">
           @for (school of schools(); track $index) {
             <lib-school [school]="school"></lib-school>

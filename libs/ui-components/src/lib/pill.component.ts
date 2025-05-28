@@ -14,6 +14,7 @@ import { Component, input } from '@angular/core';
       display: inline-block;
       font-weight: 600;
       padding: 0.1rem 0.5rem;
+      text-wrap: nowrap;
     }
 
     .dim {

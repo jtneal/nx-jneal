@@ -16,10 +16,10 @@ export interface Article {
   template: `
     <article class="card">
       <h3>{{ article().title }}</h3>
-      <p class="text-small quarter-spaced">{{ article().date }} &middot; {{ article().length }} min read</p>
+      <p class="text-small">{{ article().date }} &middot; {{ article().length }} min read</p>
       <p class="highlight double-spaced">{{ article().description }}</p>
-      <p class="buttons double-spaced">
-        <lib-button [external]="true" icon="open_in_new" [link]="article().link" text="Read on Medium"></lib-button>
+      <p class="double-spaced">
+        <lib-button [external]="true" icon="jneal_new" [link]="article().link" text="Read on Medium"></lib-button>
       </p>
     </article>
   `,

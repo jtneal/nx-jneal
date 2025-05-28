@@ -13,7 +13,7 @@ describe(ButtonComponent.name, () => {
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     fixture.componentRef.setInput('external', true);
-    fixture.componentRef.setInput('icon', 'open_in_new');
+    fixture.componentRef.setInput('icon', 'jneal_new');
     fixture.componentRef.setInput('link', 'link');
     fixture.componentRef.setInput('text', 'text');
     fixture.detectChanges();

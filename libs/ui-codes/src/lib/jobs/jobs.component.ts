@@ -11,9 +11,7 @@ import { Job, JobComponent } from './job.component';
       <div class="container column">
         <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_work"></mat-icon>Work Experience</h2>
         @for (job of jobs(); track $index) {
-          <lib-job class="triple-spaced" [job]="job">
-            <p>Led the development of multiple full-stack applications using modern technologies.</p>
-          </lib-job>
+          <lib-job class="triple-spaced" [job]="job"></lib-job>
         }
       </div>
     </section>

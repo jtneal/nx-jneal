@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
 
     img {
       border-radius: 0.75rem;
-      height: 300px;
+      height: 100%;
       max-width: 100%;
       object-fit: cover;
       width: 100%;

@@ -63,7 +63,7 @@ import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-components';
             class="double-spaced"
             (click)="scrollToPersonas()"
             [external]="false"
-            icon="arrow_forward"
+            icon="jneal_next"
             link=""
             text="Explore My Personas"
             theme="bright"

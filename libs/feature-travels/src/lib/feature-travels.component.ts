@@ -27,7 +27,7 @@ export class FeatureTravelsComponent {
 
   public links: SubNavLink[] = [
     { icon: 'jneal_cam', link: 'photos', title: 'Photo Gallery' },
-    { icon: 'circle', link: 'research', title: 'UAP/UFO Research' },
+    { icon: 'jneal_ufo', link: 'research', title: 'UAP/UFO Research' },
     { icon: 'jneal_book', link: 'articles', title: 'Articles' },
   ];
 
@@ -35,31 +35,73 @@ export class FeatureTravelsComponent {
 
   public photos: Photo[] = [
     {
+      album: 'Europe 2023',
       link: '#',
       src: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2020&auto=format&fit=crop',
       title: 'Eiffel Tower, Paris',
     },
     {
+      album: 'Europe 2023',
       link: '#',
       src: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1996&auto=format&fit=crop',
       title: 'Colosseum, Rome',
     },
     {
+      album: 'Europe 2023',
       link: '#',
       src: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=2070&auto=format&fit=crop',
       title: 'Sagrada Familia, Barcelona',
     },
     {
+      album: 'Europe 2023',
       link: '#',
       src: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=2070&auto=format&fit=crop',
       title: 'Canals of Amsterdam',
     },
     {
+      album: 'Europe 2023',
       link: '#',
       src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop',
       title: 'Tower Bridge, London',
     },
     {
+      album: 'Europe 2023',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=2070&auto=format&fit=crop',
+      title: 'Prague Castle',
+    },
+    {
+      album: 'Egypt 2022',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2020&auto=format&fit=crop',
+      title: 'Eiffel Tower, Paris',
+    },
+    {
+      album: 'Egypt 2022',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1996&auto=format&fit=crop',
+      title: 'Colosseum, Rome',
+    },
+    {
+      album: 'Egypt 2022',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=2070&auto=format&fit=crop',
+      title: 'Sagrada Familia, Barcelona',
+    },
+    {
+      album: 'Egypt 2022',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=2070&auto=format&fit=crop',
+      title: 'Canals of Amsterdam',
+    },
+    {
+      album: 'Egypt 2022',
+      link: '#',
+      src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop',
+      title: 'Tower Bridge, London',
+    },
+    {
+      album: 'Egypt 2022',
       link: '#',
       src: 'https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=2070&auto=format&fit=crop',
       title: 'Prague Castle',

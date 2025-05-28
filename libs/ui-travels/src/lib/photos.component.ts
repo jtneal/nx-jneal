@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ButtonComponent } from '@nx-jneal/ui-components';
 
 export interface Photo {
+  album: string;
   link: string;
   src: string;
   title: string;
@@ -11,7 +13,7 @@ export interface Photo {
 
 @Component({
   selector: 'lib-photos',
-  imports: [CommonModule, MatButtonModule, MatIconModule],
+  imports: [ButtonComponent, CommonModule, MatButtonModule, MatIconModule],
   styles: `
     button {
       background-color: var(--background) !important;
@@ -76,28 +78,68 @@ export interface Photo {
         <h2 class="icon-heading"><mat-icon svgIcon="jneal_cam"></mat-icon>Photo Gallery</h2>
         <p class="albums double-spaced">
           @for (album of albums(); track $index) {
-            <button [class.selected]="selected === $index" (click)="selected = $index" mat-flat-button>
+            <button [class.selected]="selected === $index" (click)="changeAlbum($index)" mat-flat-button>
               {{ album }}
             </button>
           }
         </p>
         <h3 class="text-larger">{{ albums()[selected] }}</h3>
         <div class="columns columns-3 triple-spaced">
-          @for (photo of photos(); track $index) {
-            <a [href]="photo.link" rel="noopener noreferrer" target="_blank">
-              <img [alt]="photo.title" [src]="photo.src" />
-              <caption>
-                <span>{{ photo.title }}</span>
-              </caption>
-            </a>
+          @for (photo of album; track $index) {
+            @if ($index < currentLimit) {
+              <a [href]="photo.link" rel="noopener noreferrer" target="_blank">
+                <img [alt]="photo.title" [src]="photo.src" />
+                <caption>
+                  <span>{{ photo.title }}</span>
+                </caption>
+              </a>
+            }
           }
         </div>
+        @if (hasMore) {
+          <lib-button
+            class="double-spaced"
+            (click)="loadMore()"
+            [external]="false"
+            icon="jneal_more"
+            link=""
+            text="Load More"
+          ></lib-button>
+        }
       </div>
     </section>
   `,
 })
-export class PhotosComponent {
+export class PhotosComponent implements OnInit {
   public albums = input.required<string[]>();
   public photos = input.required<Photo[]>();
+
+  private readonly pageLimit = 9;
+
+  public album: Photo[] = [];
+  public currentLimit = this.pageLimit;
   public selected = 0;
+
+  public get hasMore(): boolean {
+    return this.currentLimit < this.album.length;
+  }
+
+  public ngOnInit(): void {
+    this.changeAlbum(0);
+  }
+
+  public changeAlbum(index: number): void {
+    this.currentLimit = this.pageLimit;
+    this.selected = index;
+
+    if (index > 0) {
+      this.album = this.photos().filter((photo) => photo.album === this.albums()[index]);
+    } else {
+      this.album = this.photos();
+    }
+  }
+
+  public loadMore(): void {
+    this.currentLimit += this.pageLimit;
+  }
 }

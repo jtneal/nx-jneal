@@ -27,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Diablo 4</h4>
-              <p class="text-small quarter-spaced">Action RPG by Blizzard Entertainment</p>
+              <p class="text-small">Action RPG by Blizzard Entertainment</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -37,7 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>The First Descendant</h4>
-              <p class="text-small quarter-spaced">Free-to-play co-op looter shooter</p>
+              <p class="text-small">Free-to-play co-op looter shooter</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -47,7 +47,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>New World</h4>
-              <p class="text-small quarter-spaced">MMORPG by Amazon Games</p>
+              <p class="text-small">MMORPG by Amazon Games</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -57,7 +57,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Destiny 2</h4>
-              <p class="text-small quarter-spaced">FPS MMO by Bungie</p>
+              <p class="text-small">FPS MMO by Bungie</p>
             </div>
           </article>
         </div>
@@ -70,7 +70,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Halo</h4>
-              <p class="text-small quarter-spaced">FPS series by Microsoft</p>
+              <p class="text-small">FPS series by Microsoft</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -80,7 +80,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Call of Duty</h4>
-              <p class="text-small quarter-spaced">FPS series by Activision</p>
+              <p class="text-small">FPS series by Activision</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -90,7 +90,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Star Wars: The Old Republic</h4>
-              <p class="text-small quarter-spaced">MMORPG by BioWare</p>
+              <p class="text-small">MMORPG by BioWare</p>
             </div>
           </article>
           <article class="card with-photo">
@@ -100,7 +100,7 @@ import { MatIconModule } from '@angular/material/icon';
             />
             <div class="card-content">
               <h4>Final Fantasy XIV</h4>
-              <p class="text-small quarter-spaced">MMORPG by Square Enix</p>
+              <p class="text-small">MMORPG by Square Enix</p>
             </div>
           </article>
         </div>

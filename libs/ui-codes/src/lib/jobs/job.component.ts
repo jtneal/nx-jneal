@@ -5,6 +5,7 @@ import { PillComponent } from '@nx-jneal/ui-components';
 export interface Job {
   company: string;
   dates: string;
+  description: string[];
   title: string;
 }
 
@@ -26,15 +27,17 @@ export interface Job {
       <header>
         <div>
           <h3>{{ job().title }}</h3>
-          <p class="text-small quarter-spaced">{{ job().company }}</p>
+          <p class="text-small">{{ job().company }}</p>
         </div>
         <aside>
           <lib-pill theme="bright">{{ job().dates }}</lib-pill>
         </aside>
       </header>
-      <div class="highlight content double-spaced">
-        <ng-content></ng-content>
-      </div>
+      <ul class="highlight content double-spaced">
+        @for (item of job().description; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
     </article>
   `,
 })

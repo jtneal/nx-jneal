@@ -11,13 +11,21 @@ export interface School {
 @Component({
   selector: 'lib-school',
   imports: [CommonModule, PillComponent],
+  styles: `
+    .card {
+      display: flex;
+      justify-content: space-between;
+    }
+  `,
   template: `
     <article class="card">
-      <h3>{{ school().title }}</h3>
-      <p class="text-small quarter-spaced">{{ school().name }}</p>
-      <p class="double-spaced">
+      <header>
+        <h3>{{ school().title }}</h3>
+        <p class="text-small">{{ school().name }}</p>
+      </header>
+      <aside>
         <lib-pill theme="bright">{{ school().dates }}</lib-pill>
-      </p>
+      </aside>
     </article>
   `,
 })

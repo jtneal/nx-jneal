@@ -29,7 +29,7 @@ import { MatIconModule } from '@angular/material/icon';
             </p>
             <article class="card double-spaced">
               <h3>Historical Documentation</h3>
-              <p class="text-small quarter-spaced">Ancient records of unexplained aerial phenomena</p>
+              <p class="text-small">Ancient records of unexplained aerial phenomena</p>
               <p class="highlight double-spaced">
                 Throughout my travels, I've studied ancient Egyptian hieroglyphs, medieval manuscripts, and indigenous
                 artwork that appears to depict aerial phenomena similar to modern UAP reports.
@@ -37,7 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
             </article>
             <article class="card double-spaced">
               <h3>Modern Investigations</h3>
-              <p class="text-small quarter-spaced">Scientific approaches to UAP research</p>
+              <p class="text-small">Scientific approaches to UAP research</p>
               <p class="highlight double-spaced">
                 I follow the work of organizations like UAPx and the Galileo Project, which apply rigorous scientific
                 methodologies to the study of unexplained aerial phenomena.
@@ -45,7 +45,7 @@ import { MatIconModule } from '@angular/material/icon';
             </article>
             <article class="card double-spaced">
               <h3>Hotspot Locations</h3>
-              <p class="text-small quarter-spaced">Areas with frequent UAP activity</p>
+              <p class="text-small">Areas with frequent UAP activity</p>
               <p class="highlight double-spaced">
                 My travels have taken me to known UAP hotspots including Hessdalen Valley in Norway, Skinwalker Ranch in
                 Utah, and areas around military installations in the southwestern United States.
@@ -53,7 +53,7 @@ import { MatIconModule } from '@angular/material/icon';
             </article>
             <article class="card double-spaced">
               <h3>Witness Interviews</h3>
-              <p class="text-small quarter-spaced">First-hand accounts</p>
+              <p class="text-small">First-hand accounts</p>
               <p class="highlight double-spaced">
                 I've conducted interviews with military personnel, pilots, and civilians who have encountered
                 unexplained phenomena, documenting their experiences with an open but critical mindset.
@@ -70,7 +70,7 @@ import { MatIconModule } from '@angular/material/icon';
         <div class="columns columns-3 double-spaced">
           <article class="card">
             <h3>Graham Hancock</h3>
-            <p class="text-small quarter-spaced">Alternative Archaeology</p>
+            <p class="text-small">Alternative Archaeology</p>
             <p class="highlight double-spaced">
               Inspired by Graham Hancock's work on ancient civilizations and their potential connections to non-human
               intelligence throughout history.
@@ -78,14 +78,14 @@ import { MatIconModule } from '@angular/material/icon';
           </article>
           <article class="card">
             <h3>Knights Templar</h3>
-            <p class="text-small quarter-spaced">Historical Mystery</p>
+            <p class="text-small">Historical Mystery</p>
             <p class="highlight double-spaced">
               Exploring the mysteries surrounding the Knights Templar and their rumored discoveries during the Crusades.
             </p>
           </article>
           <article class="card">
             <h3>Paranormal Research</h3>
-            <p class="text-small quarter-spaced">Beyond the Physical</p>
+            <p class="text-small">Beyond the Physical</p>
             <p class="highlight double-spaced">
               Investigating the potential connections between UAP phenomena and other paranormal experiences reported
               throughout human history.

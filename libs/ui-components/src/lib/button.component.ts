@@ -30,36 +30,28 @@ import { RouterModule } from '@angular/router';
         width: fit-content;
       }
     }
+
+    mat-icon {
+      transform: scale(0.9);
+    }
   `,
   template: `
     @if (external()) {
       <a [class]="theme()" class="text-small" href="#" mat-flat-button rel="noopener noreferrer" target="_blank">
         {{ text() }}
-        @if (icon() === 'open_in_new') {
-          <mat-icon iconPositionEnd svgIcon="jneal_new"></mat-icon>
-        } @else if (icon() === 'github') {
-          <mat-icon iconPositionEnd svgIcon="jneal_git"></mat-icon>
-        } @else if (icon() === 'arrow_forward') {
-          <mat-icon svgIcon="jneal_next" iconPositionEnd></mat-icon>
-        }
+        <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
       </a>
     } @else {
       <a [class]="theme()" class="text-small" mat-flat-button [routerLink]="[link]">
         {{ text() }}
-        @if (icon() === 'open_in_new') {
-          <mat-icon iconPositionEnd svgIcon="jneal_new"></mat-icon>
-        } @else if (icon() === 'github') {
-          <mat-icon iconPositionEnd svgIcon="jneal_git"></mat-icon>
-        } @else if (icon() === 'arrow_forward') {
-          <mat-icon svgIcon="jneal_next" iconPositionEnd></mat-icon>
-        }
+        <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
       </a>
     }
   `,
 })
 export class ButtonComponent {
   public external = input.required<boolean>();
-  public icon = input.required<'open_in_new' | 'github' | 'arrow_forward'>();
+  public icon = input.required<string>();
   public link = input.required<string>();
   public text = input.required<string>();
   public theme = input<'dim' | 'bright'>('dim');
