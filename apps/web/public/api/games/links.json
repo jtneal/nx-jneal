@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "jneal_pc",
+    "link": "setup",
+    "title": "Gaming Setup"
+  },
+  {
+    "icon": "jneal_game",
+    "link": "games",
+    "title": "My Games"
+  },
+  {
+    "icon": "jneal_book",
+    "link": "articles",
+    "title": "Articles"
+  }
+]

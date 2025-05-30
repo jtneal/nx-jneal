@@ -359,3 +359,21 @@ lib-feature-games .icon-heading mat-icon {
 .pills > * {
   margin: 0.5rem 0.5rem 0 0;
 }
+
+.photo-link {
+  border-radius: 0.5rem;
+  display: block;
+  overflow: hidden;
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-out;
+  }
+}

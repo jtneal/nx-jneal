@@ -1,17 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
+    "outDir": "../../../dist/out-tsc",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
     "types": []
   },
   "exclude": ["src/**/*.spec.ts", "src/test-setup.ts", "jest.config.ts", "src/**/*.test.ts"],
-  "include": [
-    "src/**/*.ts",
-    "../codes/ui/src/lib/project.component.spec.ts",
-    "../codes/ui/src/lib/project.component.ts",
-    "../travels/ui/src/lib/photos.component.ts"
-  ]
+  "include": ["src/**/*.ts"]
 }

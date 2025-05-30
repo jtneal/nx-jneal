@@ -1,0 +1,54 @@
+[
+  {
+    "key": "Case",
+    "value": "Cooler Master Cosmos C700P Black Edition"
+  },
+  {
+    "key": "Power Supply",
+    "value": "Corsair AX1600i 1600 W 80+ Titanium Certified"
+  },
+  {
+    "key": "Motherboard",
+    "value": "Asus ROG Maximus Z790 Hero LGA 1700"
+  },
+  {
+    "key": "CPU",
+    "value": "Intel Core i9-13900K 3.7 GHz 10-Core"
+  },
+  {
+    "key": "CPU Cooler",
+    "value": "Corsair iCUE H150i RGB PRO XT 75 CFM Liquid"
+  },
+  {
+    "key": "GPU",
+    "value": "Gigabyte GeForce RTX 4090 24GB GDDR6X"
+  },
+  {
+    "key": "RAM",
+    "value": "Corsair Dominator Platinum 64GB DDR5 6800MHz"
+  },
+  {
+    "key": "Primary Storage",
+    "value": "2x Samsung 970 Evo Plus 2TB M.2 NVME SSD"
+  },
+  {
+    "key": "Secondary Storage",
+    "value": "2x Samsung 860 Evo 4TB 2.5\" SSD"
+  },
+  {
+    "key": "Network",
+    "value": "TP-Link 10GB PCIe Network Card"
+  },
+  {
+    "key": "Primary Case Fans",
+    "value": "4x Corsair ML140 PRO 55.4 CFM 140 mm"
+  },
+  {
+    "key": "Secondary Case Fans",
+    "value": "3x Corsair ML120 PRO 47.3 CFM 120 mm"
+  },
+  {
+    "key": "Cable Kit",
+    "value": "CableMod PRO ModMesh (Black/Blood Red)"
+  }
+]

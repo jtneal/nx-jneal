@@ -15,18 +15,19 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-jneal/data-access": ["libs/data-access/src/index.ts"],
-      "@nx-jneal/feature-codes": ["libs/feature-codes/src/index.ts"],
-      "@nx-jneal/feature-games": ["libs/feature-games/src/index.ts"],
-      "@nx-jneal/feature-home": ["libs/feature-home/src/index.ts"],
-      "@nx-jneal/feature-travels": ["libs/feature-travels/src/index.ts"],
-      "@nx-jneal/ui-codes": ["libs/ui-codes/src/index.ts"],
+      "@nx-jneal/data-access-games": ["libs/games/data-access/src/index.ts"],
+      "@nx-jneal/feature-codes": ["libs/codes/feature/src/index.ts"],
+      "@nx-jneal/feature-games": ["libs/games/feature/src/index.ts"],
+      "@nx-jneal/feature-home": ["libs/home/feature/src/index.ts"],
+      "@nx-jneal/feature-travels": ["libs/travels/feature/src/index.ts"],
+      "@nx-jneal/ui-codes": ["libs/codes/ui/src/index.ts"],
       "@nx-jneal/ui-components": ["libs/ui-components/src/index.ts"],
       "@nx-jneal/ui-core": ["libs/ui-core/src/index.ts"],
-      "@nx-jneal/ui-games": ["libs/ui-games/src/index.ts"],
-      "@nx-jneal/ui-home": ["libs/ui-home/src/index.ts"],
-      "@nx-jneal/ui-travels": ["libs/ui-travels/src/index.ts"],
-      "@nx-jneal/util": ["libs/util/src/index.ts"]
+      "@nx-jneal/ui-games": ["libs/games/ui/src/index.ts"],
+      "@nx-jneal/ui-home": ["libs/home/ui/src/index.ts"],
+      "@nx-jneal/ui-travels": ["libs/travels/ui/src/index.ts"],
+      "@nx-jneal/util-games": ["libs/games/util/src/index.ts"],
+      "@nx-jneal/util-shared": ["libs/shared/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
