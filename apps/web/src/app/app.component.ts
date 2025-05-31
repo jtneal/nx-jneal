@@ -5,7 +5,6 @@ import { SiteFooterComponent, SiteHeaderComponent } from '@nx-jneal/ui-component
 @Component({
   imports: [RouterModule, SiteFooterComponent, SiteHeaderComponent],
   selector: 'app-root',
-  styles: ``,
   template: `
     <lib-site-header></lib-site-header>
     <router-outlet></router-outlet>

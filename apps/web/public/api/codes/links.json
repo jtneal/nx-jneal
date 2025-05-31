@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "jneal_code",
+    "link": "projects",
+    "title": "Projects"
+  },
+  {
+    "icon": "jneal_work",
+    "link": "experience",
+    "title": "Experience"
+  },
+  {
+    "icon": "jneal_cap",
+    "link": "education",
+    "title": "Education"
+  },
+  {
+    "icon": "jneal_tech",
+    "link": "skills",
+    "title": "Skills"
+  },
+  {
+    "icon": "jneal_book",
+    "link": "articles",
+    "title": "Articles"
+  }
+]

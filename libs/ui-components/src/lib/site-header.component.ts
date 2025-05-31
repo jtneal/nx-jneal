@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
-import { DarkModeToggleComponent } from './dark-mode-toggle.component';
+import { DarkModeToggleComponent } from '@nx-jneal/ui-core';
 
 @Component({
   selector: 'lib-site-header',

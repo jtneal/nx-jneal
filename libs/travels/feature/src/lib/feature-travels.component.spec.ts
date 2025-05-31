@@ -1,3 +1,4 @@
+import { provideHttpClient } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FeatureTravelsComponent } from './feature-travels.component';
 
@@ -8,6 +9,7 @@ describe(FeatureTravelsComponent.name, () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [FeatureTravelsComponent],
+      providers: [provideHttpClient()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FeatureTravelsComponent);

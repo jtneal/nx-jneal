@@ -2,7 +2,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-components';
+import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-core';
 
 @Component({
   selector: 'lib-hero',

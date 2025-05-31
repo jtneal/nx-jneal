@@ -1,0 +1,73 @@
+[
+  {
+    "company": "Rocket Mortgage",
+    "dates": "Oct 2019 - Present",
+    "description": [
+      "Introduced Nx and migrated dozens of micro-frontend applications into a monorepo",
+      "Designed and developed a micro-frontend architecture in Angular with Module Federation",
+      "Lead architect and engineer for our NextGen platform, a multi-year modernization effort",
+      "Utilized the strangler pattern to incrementally migrate functionality out of legacy systems",
+      "Proven track record of successful mentorship with senior engineers and entire dev teams",
+      "Championed multiple upgrade efforts to ensure our software remained modern and secure",
+      "Consistent focus on documentation, knowledge sharing, and cross-team collaboration",
+      "Lead architect and engineer for our Mortgage Broker Directory, featured in a Super Bowl ad",
+      "Migrated dozens of applications from ECS to EKS using tools such as Helm and Rancher",
+      "Improved efficiency by building internal tools to automate or augment manual processes",
+      "Helped scale products to support massive business growth from 7b to 116b over 4 years",
+      "Implemented many optimizations to help support traffic increase of over 400% in 1 year"
+    ],
+    "title": "Staff Software Engineer"
+  },
+  {
+    "company": "Quicken Loans",
+    "dates": "Mar 2017 - Oct 2019",
+    "description": [
+      "Consistently pushed myself and other engineers to improve our quality and write clean code",
+      "Championed efforts to improve our testing strategy and encouraged others to contribute",
+      "Migrated our automated builds from Jenkins to CircleCI and improved build times by 80%",
+      "Created QL Badges to enable project maintainers to easily add quality badges to their repositories",
+      "Created a CLI application to assist with local development and automate repetitive tasks",
+      "Implemented automated code quality enforcement into our continuous integration builds",
+      "Continued to spearhead our efforts of increasing code coverage by raising it from 56.4% to 81%",
+      "Improved performance by caching slow services and decreased load times by as much as 92%"
+    ],
+    "title": "Senior Software Engineer"
+  },
+  {
+    "company": "Quicken Loans",
+    "dates": "Feb 2016 - Mar 2017",
+    "description": [
+      "Day to day work involved PHP, AngularJS, Docker, Redis, Solr, Silex, Symfony, and more",
+      "Increased the code coverage of the partner portal frontend codebase from 24.9% to 56.4%",
+      "Built a Docker-based local development environment to get engineers off shared dev VMs",
+      "Updated our codebases and internal dependencies to be PHP 7 compatible",
+      "Helped build Shipyard to provide better visibility into our PRs and automate release merges/tags"
+    ],
+    "title": "Software Engineer"
+  },
+  {
+    "company": "Erwin Penland",
+    "dates": "Aug 2012 - Jan 2016",
+    "description": [
+      "LAMP stack with OO PHP 5, CodeIgniter, MVC architecture, MySQL",
+      "Developed APIs w/ FlightPHP, Runscope for API testing/debugging",
+      "Integrated with CMS including ExpressionEngine, WordPress, Drupal",
+      "Performance tuning of code, tables, and SQL for high availability",
+      "Helped maintain automated builds and deploys with Jenkins",
+      "Conducted code reviews to ensure projects maintained high quality",
+      "Often finished projects earlier than estimated saving time and money"
+    ],
+    "title": "Interactive Developer"
+  },
+  {
+    "company": "Hannush Enterprises",
+    "dates": "Nov 2008 - Aug 2012",
+    "description": [
+      "Did frontend (HTML/CSS/JS) and backend (PHP/Joomla/WordPress)",
+      "Researched best practices for SEO to ensure code was optimized",
+      "Trained clients to manage their content w/ Joomla and/or WordPress",
+      "Mentored junior developers on best practices and coding standards"
+    ],
+    "title": "Lead Web Developer"
+  }
+]

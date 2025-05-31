@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { CardComponent } from '@nx-jneal/ui-core';
-import { ButtonComponent } from './button.component';
+import { ButtonComponent, CardComponent } from '@nx-jneal/ui-core';
 
 export interface Article {
   date: string;

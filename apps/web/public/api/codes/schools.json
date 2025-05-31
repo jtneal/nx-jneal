@@ -1,0 +1,26 @@
+[
+  {
+    "dates": "Mar 2023 - Present",
+    "name": "Western Governors University",
+    "title": "BS in Computer Software Engineering"
+  },
+  { "dates": "Jun 2024 - Present", "name": "PeopleCert", "title": "ITIL®4 Foundation" },
+  { "dates": "Apr 2024 - Present", "name": "CompTIA", "title": "CompTIA Project+" },
+  {
+    "dates": "Feb 2023 - Present",
+    "name": "Amazon Web Services",
+    "title": "AWS Certified Solutions Architect - Associate"
+  },
+  { "dates": "Feb 2023 - Present", "name": "Amazon Web Services", "title": "AWS Certified Cloud Practitioner" },
+  {
+    "dates": "Aug 2005 - Dec 2006",
+    "name": "Greenville Technical College",
+    "title": "Classes in Network Systems Administration"
+  },
+  {
+    "dates": "Jun 2003 - Dec 2003",
+    "name": "ECPI - College of Technology",
+    "title": "Classes in Networking & Security Mangement"
+  },
+  { "dates": "Aug 1999 - Jun 2003", "name": "Easley High School", "title": "Enhanced Academic Diploma" }
+]

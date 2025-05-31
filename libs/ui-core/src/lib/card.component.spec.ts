@@ -12,6 +12,7 @@ describe(CardComponent.name, () => {
 
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('title', 'title');
     fixture.detectChanges();
   });
 

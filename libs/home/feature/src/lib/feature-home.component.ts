@@ -5,7 +5,6 @@ import { AboutComponent, HeroComponent, PersonasComponent } from '@nx-jneal/ui-h
 @Component({
   selector: 'lib-feature-home',
   imports: [AboutComponent, CommonModule, HeroComponent, PersonasComponent],
-  styles: ``,
   template: `
     <lib-hero></lib-hero>
     <lib-personas></lib-personas>

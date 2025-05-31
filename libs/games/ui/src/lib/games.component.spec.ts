@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { GamesComponent } from './games.component';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 describe(GamesComponent.name, () => {
   let component: GamesComponent;
@@ -10,8 +12,15 @@ describe(GamesComponent.name, () => {
       imports: [GamesComponent],
     }).compileComponents();
 
+    const registry = TestBed.inject(MatIconRegistry);
+    const sanitizer = TestBed.inject(DomSanitizer);
+
+    registry.addSvgIconLiteral(`jneal_game`, sanitizer.bypassSecurityTrustHtml('<svg></svg>'));
+
     fixture = TestBed.createComponent(GamesComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('past', []);
+    fixture.componentRef.setInput('recent', []);
     fixture.detectChanges();
   });
 

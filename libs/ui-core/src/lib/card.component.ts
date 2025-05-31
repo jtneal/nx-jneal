@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
+import { PillComponent } from './pill.component';
 
 @Component({
   selector: 'lib-card',
-  imports: [CommonModule],
+  imports: [CommonModule, PillComponent],
   styles: `
     :host {
       display: block;
+      width: 100%;
     }
 
     .jneal-card {
@@ -36,6 +38,11 @@ import { Component, input } from '@angular/core';
 
     .jneal-card-content {
       padding: 1.5rem;
+
+      .with-badge {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   `,
   template: `
@@ -44,16 +51,26 @@ import { Component, input } from '@angular/core';
         <img [alt]="title()" class="jneal-card-image" [class.small]="imageSize() === 'small'" [src]="image()" />
       }
       <div class="jneal-card-content">
-        <h4>{{ title() }}</h4>
-        @if (subtitle()) {
-          <p class="text-small">{{ subtitle() }}</p>
-        }
+        <div [class.with-badge]="badge()">
+          <header>
+            <h4>{{ title() }}</h4>
+            @if (subtitle()) {
+              <p class="text-small">{{ subtitle() }}</p>
+            }
+          </header>
+          @if (badge()) {
+            <aside>
+              <lib-pill theme="bright">{{ badge() }}</lib-pill>
+            </aside>
+          }
+        </div>
         <ng-content></ng-content>
       </div>
     </article>
   `,
 })
 export class CardComponent {
+  public badge = input<string>();
   public image = input<string>();
   public imageSize = input<'small' | 'large'>('large');
   public subtitle = input<string>();

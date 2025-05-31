@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "jneal_cam",
+    "link": "photos",
+    "title": "Photo Gallery"
+  },
+  {
+    "icon": "jneal_uap",
+    "link": "research",
+    "title": "UAP Research"
+  },
+  {
+    "icon": "jneal_book",
+    "link": "articles",
+    "title": "Articles"
+  }
+]

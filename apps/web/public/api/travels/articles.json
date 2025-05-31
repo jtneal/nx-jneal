@@ -1,0 +1,23 @@
+[
+  {
+    "date": "December 5, 2022",
+    "description": "My journey through the land of pharaohs and the incredible discoveries I made along the way.",
+    "length": "12",
+    "link": "#",
+    "title": "Exploring the Ancient Mysteries of Egypt"
+  },
+  {
+    "date": "August 18, 2023",
+    "description": "Discovering lesser-known architectural wonders across Europe's historic cities.",
+    "length": "9",
+    "link": "#",
+    "title": "The Hidden Gems of European Architecture"
+  },
+  {
+    "date": "February 28, 2023",
+    "description": "Visiting locations known for frequent UAP sightings and the stories behind them.",
+    "length": "15",
+    "link": "#",
+    "title": "In Search of the Unexplained: UAP Hotspots Around the World"
+  }
+]

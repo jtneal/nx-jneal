@@ -14,6 +14,10 @@ import { CardComponent } from './card.component';
       &:hover {
         transform: translateY(-5px);
       }
+
+      lib-card {
+        height: 100%;
+      }
     }
   `,
   template: `

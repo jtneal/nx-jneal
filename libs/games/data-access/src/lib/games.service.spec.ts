@@ -1,21 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { TestBed } from '@angular/core/testing';
 import { GamesService } from './games.service';
 
 describe(GamesService.name, () => {
-  let component: GamesService;
-  let fixture: ComponentFixture<GamesService>;
+  let service: GamesService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GamesService],
+      providers: [GamesService, provideHttpClient()],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GamesService);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    service = TestBed.inject(GamesService);
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(service).toBeTruthy();
   });
 });

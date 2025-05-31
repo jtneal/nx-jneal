@@ -7,11 +7,6 @@ import { Dictionary, DictionaryCardComponent } from '@nx-jneal/ui-core';
 @Component({
   selector: 'lib-setup',
   imports: [CommonModule, DictionaryCardComponent, MatButtonModule, MatIconModule],
-  styles: `
-    .photo-link {
-      height: 100%;
-    }
-  `,
   template: `
     <section class="sub-page-large" id="setup">
       <div class="container column">

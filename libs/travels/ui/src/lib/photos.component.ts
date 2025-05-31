@@ -2,14 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonComponent } from '@nx-jneal/ui-components';
-
-export interface Photo {
-  album: string;
-  link: string;
-  src: string;
-  title: string;
-}
+import { ButtonComponent } from '@nx-jneal/ui-core';
+import { Photo } from '@nx-jneal/util-travels';
 
 @Component({
   selector: 'lib-photos',
