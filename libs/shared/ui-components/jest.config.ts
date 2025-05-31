@@ -1,8 +1,8 @@
 export default {
   displayName: 'ui-components',
-  preset: '../../jest.preset.js',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/ui-components',
+  coverageDirectory: '../../../coverage/libs/shared/ui-components',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
