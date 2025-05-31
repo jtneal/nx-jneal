@@ -30,6 +30,10 @@ import { RouterModule } from '@angular/router';
       width: 100%;
     }
 
+    .card-content {
+      padding: 1.5rem;
+    }
+
     p {
       margin: 0.75rem 0 1.5rem;
 

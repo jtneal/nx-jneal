@@ -13,9 +13,10 @@ export interface SubNavLink {
   imports: [CommonModule, MatIconModule],
   styles: `
     nav {
-      background-color: var(--background);
+      background-color: var(--background-alt);
       border-bottom: 1px solid var(--background-muted);
       border-top: 1px solid var(--background-muted);
+      box-shadow: 0 3px 6px rgb(0 0 0 / 0.5);
       padding: 0.5rem 0;
       position: sticky;
       top: 4rem;
