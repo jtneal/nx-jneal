@@ -1,0 +1,91 @@
+@use '@angular/material' as mat;
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  @include mat.theme(
+    (
+      color: mat.$violet-palette,
+      density: 0,
+      typography: Inter,
+    )
+  );
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground-muted);
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--foreground);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3.75rem;
+
+  span {
+    animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    display: inline-block;
+    margin-right: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+
+    &:nth-child(1) {
+      animation-delay: 0.04s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.16s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.28s;
+    }
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+
+  &.big {
+    font-size: 2.25rem;
+  }
+
+  &.huge {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--foreground);
+  }
+}

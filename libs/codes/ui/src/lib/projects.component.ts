@@ -1,13 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonComponent, PillComponent } from '@nx-jneal/ui-core';
-import { CardComponent } from '@nx-jneal/ui-core';
+import { ButtonComponent, CardComponent, PillComponent } from '@nx-jneal/ui-core';
 import { Project } from '@nx-jneal/util-codes';
 
 @Component({
   selector: 'lib-projects',
   imports: [ButtonComponent, CardComponent, CommonModule, MatIconModule, PillComponent],
+  styles: `
+    lib-pill {
+      margin: 0.5rem 0.5rem 0 0;
+    }
+  `,
   template: `
     <section class="sub-page-large " id="projects">
       <div class="container column">
@@ -15,7 +19,7 @@ import { Project } from '@nx-jneal/util-codes';
         <div class="columns columns-3 triple-spaced">
           @for (project of projects(); track $index) {
             <lib-card [image]="project.image" [title]="project.title">
-              <p class="pills">
+              <p>
                 @for (item of project.tech; track $index) {
                   <lib-pill theme="dim">{{ item }}</lib-pill>
                 }
