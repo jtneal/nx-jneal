@@ -19,7 +19,7 @@ describe(SkillsComponent.name, () => {
 
     fixture = TestBed.createComponent(SkillsComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('skills', []);
+    fixture.componentRef.setInput('skills', { title: 'title' });
     fixture.detectChanges();
   });
 

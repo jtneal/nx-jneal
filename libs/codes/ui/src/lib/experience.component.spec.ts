@@ -19,7 +19,7 @@ describe(ExperienceComponent.name, () => {
 
     fixture = TestBed.createComponent(ExperienceComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('jobs', []);
+    fixture.componentRef.setInput('experience', { title: 'title' });
     fixture.detectChanges();
   });
 

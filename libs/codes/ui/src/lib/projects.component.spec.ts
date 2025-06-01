@@ -19,7 +19,7 @@ describe(ProjectsComponent.name, () => {
 
     fixture = TestBed.createComponent(ProjectsComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('projects', []);
+    fixture.componentRef.setInput('projects', { title: 'title' });
     fixture.detectChanges();
   });
 

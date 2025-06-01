@@ -19,8 +19,7 @@ describe(SetupComponent.name, () => {
 
     fixture = TestBed.createComponent(SetupComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('peripherals', []);
-    fixture.componentRef.setInput('specifications', []);
+    fixture.componentRef.setInput('setup', { icon: 'jneal_pc', title: 'title' });
     fixture.detectChanges();
   });
 

@@ -80,6 +80,10 @@
   margin-top: 2rem;
 }
 
+.sub-page-small {
+  scroll-margin-top: 4rem;
+}
+
 .sub-page {
   scroll-margin-top: 6.5rem;
 }
@@ -100,15 +104,15 @@
   margin-right: 0.75rem;
 }
 
-lib-feature-codes .icon-heading mat-icon {
+.red-theme .icon-heading mat-icon {
   color: var(--red-bright);
 }
 
-lib-feature-travels .icon-heading mat-icon {
+.blue-theme .icon-heading mat-icon {
   color: var(--blue-bright);
 }
 
-lib-feature-games .icon-heading mat-icon {
+.green-theme .icon-heading mat-icon {
   color: var(--green-bright);
 }
 

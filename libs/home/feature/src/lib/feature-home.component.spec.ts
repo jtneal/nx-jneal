@@ -3,6 +3,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { FeatureHomeComponent } from './feature-home.component';
+import { provideHttpClient } from '@angular/common/http';
 
 describe(FeatureHomeComponent.name, () => {
   let component: FeatureHomeComponent;
@@ -12,6 +13,7 @@ describe(FeatureHomeComponent.name, () => {
     await TestBed.configureTestingModule({
       imports: [FeatureHomeComponent],
       providers: [
+        provideHttpClient(),
         {
           provide: ActivatedRoute,
           useValue: {},

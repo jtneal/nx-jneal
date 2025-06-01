@@ -19,8 +19,7 @@ describe(GamesComponent.name, () => {
 
     fixture = TestBed.createComponent(GamesComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('past', []);
-    fixture.componentRef.setInput('recent', []);
+    fixture.componentRef.setInput('games', { categories: [], icon: 'jneal_game', title: 'title' });
     fixture.detectChanges();
   });
 

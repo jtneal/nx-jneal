@@ -9,7 +9,6 @@ import { PromoComponent } from './promo.component';
   styles: `
     section {
       padding: 3rem 0;
-      scroll-margin-top: 4rem;
     }
 
     .container {
@@ -17,7 +16,7 @@ import { PromoComponent } from './promo.component';
     }
   `,
   template: `
-    <section id="personas">
+    <section class="sub-page-small" id="personas">
       <div class="container column">
         <h2 class="huge">{{ personas().title }}</h2>
         <p class="text-large double-spaced">

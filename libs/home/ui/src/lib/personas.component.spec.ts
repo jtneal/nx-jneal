@@ -26,6 +26,7 @@ describe(PersonasComponent.name, () => {
 
     fixture = TestBed.createComponent(PersonasComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('personas', { title: 'title' });
     fixture.detectChanges();
   });
 
