@@ -1,0 +1,123 @@
+{
+  "articles": [
+    {
+      "dictionary": [
+        {
+          "key": "Case",
+          "value": "Cooler Master Cosmos C700P Black Edition"
+        },
+        {
+          "key": "Power Supply",
+          "value": "Corsair AX1600i 1600 W 80+ Titanium Certified"
+        },
+        {
+          "key": "Motherboard",
+          "value": "Asus ROG Maximus Z790 Hero LGA 1700"
+        },
+        {
+          "key": "CPU",
+          "value": "Intel Core i9-13900K 3.7 GHz 10-Core"
+        },
+        {
+          "key": "CPU Cooler",
+          "value": "Corsair iCUE H150i RGB PRO XT 75 CFM Liquid"
+        },
+        {
+          "key": "GPU",
+          "value": "Gigabyte GeForce RTX 4090 24GB GDDR6X"
+        },
+        {
+          "key": "RAM",
+          "value": "Corsair Dominator Platinum 64GB DDR5 6800MHz"
+        },
+        {
+          "key": "Primary Storage",
+          "value": "2x Samsung 970 Evo Plus 2TB M.2 NVME SSD"
+        },
+        {
+          "key": "Secondary Storage",
+          "value": "2x Samsung 860 Evo 4TB 2.5\" SSD"
+        },
+        {
+          "key": "Network",
+          "value": "TP-Link 10GB PCIe Network Card"
+        },
+        {
+          "key": "Primary Case Fans",
+          "value": "4x Corsair ML140 PRO 55.4 CFM 140 mm"
+        },
+        {
+          "key": "Secondary Case Fans",
+          "value": "3x Corsair ML120 PRO 47.3 CFM 120 mm"
+        },
+        {
+          "key": "Cable Kit",
+          "value": "CableMod PRO ModMesh (Black/Blood Red)"
+        }
+      ],
+      "image": "/images/gaming-pc.jpg",
+      "title": "Specifications"
+    },
+    {
+      "dictionary": [
+        {
+          "key": "Desk Frame",
+          "value": "UPLIFT Standing Desk V2-Commercial"
+        },
+        {
+          "key": "Desk Top",
+          "value": "Solid Wood - Walnut Butcher Block - 72\" x 30\""
+        },
+        {
+          "key": "Chair",
+          "value": "Herman Miller x Logitech - Embody Gaming"
+        },
+        {
+          "key": "Primary Monitors",
+          "value": "2x 34\" Alienware AW3423DW 1440p 175Hz"
+        },
+        {
+          "key": "Secondary Monitors",
+          "value": "2x 27\" Alienware AW2725QF 4K 180Hz"
+        },
+        {
+          "key": "Keyboard",
+          "value": "Razer Huntsman V3 Pro"
+        },
+        {
+          "key": "Mouse",
+          "value": "Razer Naga V2 Pro Wireless"
+        },
+        {
+          "key": "Mousepad",
+          "value": "Razer Goliathus Chroma 3XL - Black"
+        },
+        {
+          "key": "Headset",
+          "value": "Sennheiser HD 660 S 2"
+        },
+        {
+          "key": "Camera",
+          "value": "Sony Alpha ZV-E10"
+        },
+        {
+          "key": "Microphone",
+          "value": "Shure SM7B with Cloudlifter CL-1"
+        },
+        {
+          "key": "Mixer",
+          "value": "Peavey PV 6 6-Channel Compact"
+        },
+        {
+          "key": "Speakers",
+          "value": "Edifier S1000MKII 120w"
+        }
+      ],
+      "image": "/images/gaming-setup.jpg",
+      "title": "Peripherals"
+    }
+  ],
+  "description": "Every few years, I build a new gaming PC from the ground up - an opportunity to stay current with cutting-edge hardware and optimize performance for both work and play. I also enjoy building custom rigs for friends and family, sharing my expertise and helping them get the most out of their systems. My love for gaming and technology fuels a constant pursuit of the ideal setup - one that enhances immersion, performance, and productivity alike. Whether I'm raiding in Destiny 2, grinding through Diablo 4, or diving into a new coding project, I want every experience to feel seamless and powerful.",
+  "icon": "jneal_pc",
+  "title": "My Gaming Setup"
+}

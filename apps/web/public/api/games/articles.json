@@ -1,23 +1,27 @@
-[
-  {
-    "date": "July 12, 2023",
-    "description": "Strategies and tips for mastering Diablo 4's challenging endgame activities.",
-    "length": "11",
-    "link": "#",
-    "title": "Diablo 4: A Veteran's Guide to Endgame Content"
-  },
-  {
-    "date": "May 30, 2023",
-    "description": "Tracing the development of the MMORPG genre and where it might be headed next.",
-    "length": "14",
-    "link": "#",
-    "title": "The Evolution of MMORPGs: From EverQuest to New World"
-  },
-  {
-    "date": "April 5, 2023",
-    "description": "Everything you need to know about creating a comfortable and high-performance gaming environment.",
-    "length": "13",
-    "link": "#",
-    "title": "Building the Ultimate Gaming Setup: A Comprehensive Guide"
-  }
-]
+{
+  "cards": [
+    {
+      "date": "July 12, 2023",
+      "description": "Strategies and tips for mastering Diablo 4's challenging endgame activities.",
+      "length": "11",
+      "link": "#",
+      "title": "Diablo 4: A Veteran's Guide to Endgame Content"
+    },
+    {
+      "date": "May 30, 2023",
+      "description": "Tracing the development of the MMORPG genre and where it might be headed next.",
+      "length": "14",
+      "link": "#",
+      "title": "The Evolution of MMORPGs: From EverQuest to New World"
+    },
+    {
+      "date": "April 5, 2023",
+      "description": "Everything you need to know about creating a comfortable and high-performance gaming environment.",
+      "length": "13",
+      "link": "#",
+      "title": "Building the Ultimate Gaming Setup: A Comprehensive Guide"
+    }
+  ],
+  "icon": "jneal_book",
+  "title": "Articles"
+}

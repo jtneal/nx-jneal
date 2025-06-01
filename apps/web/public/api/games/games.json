@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "games": [
+        {
+          "developer": "Blizzard",
+          "genre": "Action RPG",
+          "image": "/images/diablo-iv.jpg",
+          "link": "https://store.steampowered.com/app/2344520/Diablo_IV/",
+          "title": "Diablo IV"
+        },
+        {
+          "developer": "Nexon",
+          "genre": "Looter Shooter",
+          "image": "/images/the-first-descendant.jpg",
+          "link": "https://store.steampowered.com/app/2074920/The_First_Descendant/",
+          "title": "The First Descendant"
+        },
+        {
+          "developer": "Amazon Games",
+          "genre": "MMORPG",
+          "image": "/images/new-world-aeternum.jpg",
+          "link": "https://store.steampowered.com/app/1063730/New_World_Aeternum/",
+          "title": "New World: Aeternum"
+        },
+        {
+          "developer": "Bungie",
+          "genre": "Looter Shooter",
+          "image": "/images/destiny-2.jpg",
+          "link": "https://store.steampowered.com/app/1085660/Destiny_2/",
+          "title": "Destiny 2"
+        }
+      ],
+      "title": "Recently Played"
+    },
+    {
+      "games": [
+        {
+          "developer": "Hello Games",
+          "genre": "RPG",
+          "image": "/images/no-mans-sky.jpg",
+          "link": "https://store.steampowered.com/app/275850/No_Mans_Sky/",
+          "title": "No Man's Sky"
+        },
+        {
+          "developer": "Activision",
+          "genre": "Looter Shooter",
+          "image": "/images/the-division.jpg",
+          "link": "https://store.steampowered.com/app/365590/Tom_Clancys_The_Division/",
+          "title": "The Division"
+        },
+        {
+          "developer": "Square Enix",
+          "genre": "MMORPG",
+          "image": "/images/final-fantasy-xiv.jpg",
+          "link": "https://store.steampowered.com/app/39210/FINAL_FANTASY_XIV_Online/",
+          "title": "Final Fantasy XIV"
+        },
+        {
+          "developer": "BioWare",
+          "genre": "MMORPG",
+          "image": "/images/star-wars-the-old-republic.jpg",
+          "link": "https://store.steampowered.com/app/1286830/STAR_WARS_The_Old_Republic/",
+          "title": "Star Wars: The Old Republic"
+        }
+      ],
+      "title": "Recently Played"
+    }
+  ],
+  "icon": "jneal_pc",
+  "title": "My Gaming Setup"
+}

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent, PillComponent } from '@nx-jneal/ui-core';
-import { Skill } from '@nx-jneal/util-codes';
+import { SkillSection } from '@nx-jneal/util-codes';
 
 @Component({
   selector: 'lib-skills',
@@ -30,16 +30,16 @@ import { Skill } from '@nx-jneal/util-codes';
   template: `
     <section class="sub-page" id="skills">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_tech"></mat-icon>Skills &amp; Technologies</h2>
+        <h2 class="icon-heading triple-spaced"><mat-icon [svgIcon]="skills().icon"></mat-icon>{{ skills().title }}</h2>
         <div class="columns columns-2 triple-spaced">
-          @for (skill of skills(); track $index) {
-            <lib-card [title]="skill.title">
+          @for (card of skills().cards; track $index) {
+            <lib-card [title]="card.title">
               <p class="bubbles double-spaced">
-                @for (item of skill.tech; track $index) {
+                @for (skill of card.skills; track $index) {
                   <lib-pill theme="dim">
-                    {{ item.name }}
+                    {{ skill.name }}
                     @for (i of [1, 2, 3]; track i) {
-                      <span class="rating" [class.off]="i > item.rating">&bull;</span>
+                      <span class="rating" [class.off]="i > skill.rating">&bull;</span>
                     }
                   </lib-pill>
                 }
@@ -52,5 +52,5 @@ import { Skill } from '@nx-jneal/util-codes';
   `,
 })
 export class SkillsComponent {
-  public skills = input.required<Skill[]>();
+  public skills = input.required<SkillSection>();
 }

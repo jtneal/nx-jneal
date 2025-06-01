@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Article, Hero, Link } from '@nx-jneal/util-shared';
-import { Photo, Research } from '@nx-jneal/util-travels';
+import { ArticleSection, Hero, Link } from '@nx-jneal/util-shared';
+import { PhotoCard, PhotoSection, ResearchCard, ResearchSection } from '@nx-jneal/util-travels';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,6 +9,10 @@ import { Observable } from 'rxjs';
 })
 export class TravelsService {
   private readonly http = inject(HttpClient);
+
+  public getArticles(): Observable<ArticleSection> {
+    return this.http.get<ArticleSection>('/api/travels/articles.json');
+  }
 
   public getHero(): Observable<Hero> {
     return this.http.get<Hero>('/api/travels/hero.json');
@@ -18,19 +22,11 @@ export class TravelsService {
     return this.http.get<Link[]>('/api/travels/links.json');
   }
 
-  public getAlbums(): Observable<string[]> {
-    return this.http.get<string[]>('/api/travels/albums.json');
+  public getPhotos(): Observable<PhotoSection> {
+    return this.http.get<PhotoSection>('/api/travels/photos.json');
   }
 
-  public getPhotos(): Observable<Photo[]> {
-    return this.http.get<Photo[]>('/api/travels/photos.json');
-  }
-
-  public getResearch(): Observable<Research[]> {
-    return this.http.get<Research[]>('/api/travels/research.json');
-  }
-
-  public getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>('/api/travels/articles.json');
+  public getResearch(): Observable<ResearchSection> {
+    return this.http.get<ResearchSection>('/api/travels/research.json');
   }
 }

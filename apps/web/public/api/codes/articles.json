@@ -1,23 +1,27 @@
-[
-  {
-    "date": "May 10, 2023",
-    "description": "Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.",
-    "length": "8",
-    "link": "#",
-    "title": "Building a Modern Web Application with Next.js"
-  },
-  {
-    "date": "April 22, 2023",
-    "description": "Exploring the benefits and use cases of React Server Components in modern web development.",
-    "length": "6",
-    "link": "#",
-    "title": "The Power of Server Components in React"
-  },
-  {
-    "date": "March 15, 2023",
-    "description": "A comprehensive look at modern state management solutions for React applications.",
-    "length": "10",
-    "link": "#",
-    "title": "State Management in 2023: Beyond Redux"
-  }
-]
+{
+  "cards": [
+    {
+      "date": "May 10, 2023",
+      "description": "Learn how to create a full-stack application using Next.js, TypeScript, and Tailwind CSS.",
+      "length": "8",
+      "link": "#",
+      "title": "Building a Modern Web Application with Next.js"
+    },
+    {
+      "date": "April 22, 2023",
+      "description": "Exploring the benefits and use cases of React Server Components in modern web development.",
+      "length": "6",
+      "link": "#",
+      "title": "The Power of Server Components in React"
+    },
+    {
+      "date": "March 15, 2023",
+      "description": "A comprehensive look at modern state management solutions for React applications.",
+      "length": "10",
+      "link": "#",
+      "title": "State Management in 2023: Beyond Redux"
+    }
+  ],
+  "icon": "jneal_book",
+  "title": "Articles"
+}

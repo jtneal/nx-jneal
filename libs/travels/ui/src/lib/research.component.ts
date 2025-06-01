@@ -3,7 +3,7 @@ import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from '@nx-jneal/ui-core';
-import { Research } from '@nx-jneal/util-travels';
+import { ResearchSection } from '@nx-jneal/util-travels';
 
 @Component({
   selector: 'lib-research',
@@ -19,10 +19,10 @@ import { Research } from '@nx-jneal/util-travels';
         </p>
         <div class="columns columns-2 triple-spaced">
           <div>
-            @for (item of research(); track $index) {
+            @for (card of research().cards; track $index) {
               @if ($index < 3) {
-                <lib-card [class.double-spaced]="$index > 0" [subtitle]="item.subtitle" [title]="item.title">
-                  <p class="double-spaced">{{ item.description }}</p>
+                <lib-card [class.double-spaced]="$index > 0" [subtitle]="card.subtitle" [title]="card.title">
+                  <p class="double-spaced">{{ card.description }}</p>
                 </lib-card>
               }
             }
@@ -34,10 +34,10 @@ import { Research } from '@nx-jneal/util-travels';
           </aside>
         </div>
         <div class="columns columns-2 double-spaced">
-          @for (item of research(); track $index) {
+          @for (card of research().cards; track $index) {
             @if ($index >= 3) {
-              <lib-card [subtitle]="item.subtitle" [title]="item.title">
-                <p class="double-spaced">{{ item.description }}</p>
+              <lib-card [subtitle]="card.subtitle" [title]="card.title">
+                <p class="double-spaced">{{ card.description }}</p>
               </lib-card>
             }
           }
@@ -47,5 +47,5 @@ import { Research } from '@nx-jneal/util-travels';
   `,
 })
 export class ResearchComponent {
-  public research = input.required<Research[]>();
+  public research = input.required<ResearchSection>();
 }

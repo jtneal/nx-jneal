@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Game } from '@nx-jneal/util-games';
-import { Article, Dictionary, Hero, Link } from '@nx-jneal/util-shared';
+import { GameSection, SetupSection } from '@nx-jneal/util-games';
+import { ArticleSection, Hero, Link } from '@nx-jneal/util-shared';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,6 +9,14 @@ import { Observable } from 'rxjs';
 })
 export class GamesService {
   private readonly http = inject(HttpClient);
+
+  public getArticles(): Observable<ArticleSection> {
+    return this.http.get<ArticleSection>('/api/games/articles.json');
+  }
+
+  public getGames(): Observable<GameSection> {
+    return this.http.get<GameSection>('/api/games/games.json');
+  }
 
   public getHero(): Observable<Hero> {
     return this.http.get<Hero>('/api/games/hero.json');
@@ -18,23 +26,7 @@ export class GamesService {
     return this.http.get<Link[]>('/api/games/links.json');
   }
 
-  public getSpecifications(): Observable<Dictionary[]> {
-    return this.http.get<Dictionary[]>('/api/games/specifications.json');
-  }
-
-  public getPeripherals(): Observable<Dictionary[]> {
-    return this.http.get<Dictionary[]>('/api/games/peripherals.json');
-  }
-
-  public getPast(): Observable<Game[]> {
-    return this.http.get<Game[]>('/api/games/past.json');
-  }
-
-  public getRecent(): Observable<Game[]> {
-    return this.http.get<Game[]>('/api/games/recent.json');
-  }
-
-  public getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>('/api/games/articles.json');
+  public getSetup(): Observable<SetupSection> {
+    return this.http.get<SetupSection>('/api/games/setup.json');
   }
 }

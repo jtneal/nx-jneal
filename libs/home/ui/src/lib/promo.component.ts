@@ -23,9 +23,13 @@ import { RouterModule } from '@angular/router';
       }
     }
 
+    .photo-container {
+      height: 12rem;
+      overflow: hidden;
+    }
+
     img {
       border-radius: 0.5rem 0.5rem 0 0;
-      height: 12rem;
       transition: transform 0.2s ease-out;
       width: 100%;
     }
@@ -125,7 +129,7 @@ import { RouterModule } from '@angular/router';
   `,
   template: `
     <a [class]="theme()" [routerLink]="link()">
-      <img alt="photo representing {{ title() }}" [src]="image()" />
+      <div class="photo-container"><img alt="photo representing {{ title() }}" [src]="image()" /></div>
       <article class="card-content">
         <h3>{{ title() }}</h3>
         <p>{{ description() }}</p>

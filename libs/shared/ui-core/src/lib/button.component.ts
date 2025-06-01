@@ -42,7 +42,7 @@ import { RouterModule } from '@angular/router';
         <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
       </a>
     } @else {
-      <a [class]="theme()" class="text-small" mat-flat-button [routerLink]="[link]">
+      <a [class]="theme()" class="text-small" [href]="link()" mat-flat-button>
         {{ text() }}
         <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
       </a>

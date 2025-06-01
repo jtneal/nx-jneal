@@ -1,8 +1,9 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-core';
+import { HeroSection } from '@nx-jneal/util-home';
 
 @Component({
   selector: 'lib-hero',
@@ -38,46 +39,46 @@ import { ButtonComponent, FancyFadeInDirective } from '@nx-jneal/ui-core';
       color: rgb(255 255 255 / 0.9);
     }
 
-    button {
-      background-color: var(--white) !important;
-      border-radius: 0.5rem;
-      color: var(--vibrant-end) !important;
-    }
-
     img {
       border: 0.5rem solid var(--navy);
       border-radius: 50%;
+      transition: transform 0.2s ease-out;
       width: 400px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   `,
   template: `
     <section>
       <div class="container">
         <article>
-          <h1 libFancyFadeIn>Hi, I'm JNeal</h1>
+          <h1 libFancyFadeIn>{{ hero().title }}</h1>
           <p class="text-large single-spaced">
-            Welcome to my digital home where I share my passions for coding, traveling, and gaming. I've created
-            distinct personas to help you navigate the different facets of my interests.
+            {{ hero().description }}
           </p>
           <lib-button
             class="double-spaced"
-            (click)="scrollToPersonas()"
+            (click)="scrollToPersonas($event)"
             [external]="false"
             icon="jneal_next"
-            link=""
-            text="Explore My Personas"
+            link="#personas"
+            [text]="hero().button"
             theme="bright"
           ></lib-button>
         </article>
-        <img alt="photo of JNeal" src="/images/photo-of-jneal.jpg" />
+        <img [alt]="hero().title" [src]="hero().image" />
       </div>
     </section>
   `,
 })
 export class HeroComponent {
+  public hero = input.required<HeroSection>();
   private readonly document = inject(DOCUMENT);
 
-  public scrollToPersonas(): void {
+  public scrollToPersonas(event: Event): void {
+    event.preventDefault();
     this.document.getElementById('personas')?.scrollIntoView({ behavior: 'smooth' });
   }
 }

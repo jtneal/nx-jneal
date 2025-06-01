@@ -1,27 +1,31 @@
-[
-  {
-    "description": "I'm deeply fascinated by ancient civilizations - their myths, mysteries, and the tantalizing possibility of connections to non-human intelligence. While I've spent the most time studying the ancient Egyptians, my curiosity also draws me to the Sumerians, the enigmatic Taş Tepeler culture, the Maya, the Olmecs, the Paracas people, and many others that shaped humanity's early story. What captivates me most is the idea of a forgotten chapter in our history - a lost advanced civilization, as explored in the writings of Graham Hancock and others who challenge conventional timelines.",
-    "subtitle": "Ancient records of unexplained anomalous phenomena",
-    "title": "Historical Documentation"
-  },
-  {
-    "description": "Richard Dolan's UFOs and the National Security State series provided me with a comprehensive foundation for understanding UAP phenomena through a historical and geopolitical lens. His research has deeply shaped my perspective on how governments have perceived, documented, and responded to these encounters throughout the 20th and 21st centuries. I also closely follow the work of Robert Hastings, particularly his book UFOs & Nukes, which delves into the unsettling correlation between UAP activity and nuclear weapons sites - raising profound questions about the intersection of these phenomena with national and global security.",
-    "subtitle": "Recent records of unexplained anomalous phenomena",
-    "title": "Recent History"
-  },
-  {
-    "description": "I closely follow the work of organizations such as Skywatcher, OpenNHI, CUFOS, MUFON, UAPx, the Scientific Coalition for UAP Studies, and the Galileo Project - groups dedicated to the scientific investigation of unexplained anomalous phenomena. Their commitment to data collection, rigorous analysis, and thoughtful engagement with both military and civilian witnesses aligns with my belief that a methodical, evidence-based approach is essential to advancing our understanding of these mysteries.",
-    "subtitle": "Scientific approaches to UAP research",
-    "title": "Modern Investigations"
-  },
-  {
-    "description": "I'm particularly inspired by the work of individuals like Chris Bledsoe, whose book UFO of God explores the profound intersection between UAP phenomena, religious experiences, and spiritual belief systems. Similarly, D.W. Pasulka's American Cosmic offers a compelling examination of how technology, faith, and the human search for meaning converge in the context of UAPs and the possibility of non-human intelligence. Both works challenge traditional narratives and invite deeper contemplation of the metaphysical dimensions of these encounters.",
-    "subtitle": "Alternative Archaeology",
-    "title": "Religious Connections"
-  },
-  {
-    "description": "Some of my most compelling research has centered on the Knights Templar - a medieval order cloaked in secrecy, legend, and enduring mystery. Their abrupt dissolution in the early 14th century, along with persistent rumors of their connection to ancient knowledge and sacred relics, has given rise to a wealth of speculation about their true mission and ultimate fate. The writings of authors such as Timothy Hogan and Scott Wolter have been particularly influential in shaping my understanding of the Templars' historical importance and their lasting imprint on modern esoteric and spiritual traditions.",
-    "subtitle": "Historical Mystery",
-    "title": "The Knights Templar"
-  }
-]
+{
+  "cards": [
+    {
+      "description": "I'm deeply fascinated by ancient civilizations - their myths, mysteries, and the tantalizing possibility of connections to non-human intelligence. While I've spent the most time studying the ancient Egyptians, my curiosity also draws me to the Sumerians, the enigmatic Taş Tepeler culture, the Maya, the Olmecs, the Paracas people, and many others that shaped humanity's early story. What captivates me most is the idea of a forgotten chapter in our history - a lost advanced civilization, as explored in the writings of Graham Hancock and others who challenge conventional timelines.",
+      "subtitle": "Ancient records of unexplained anomalous phenomena",
+      "title": "Historical Documentation"
+    },
+    {
+      "description": "Richard Dolan's UFOs and the National Security State series provided me with a comprehensive foundation for understanding UAP phenomena through a historical and geopolitical lens. His research has deeply shaped my perspective on how governments have perceived, documented, and responded to these encounters throughout the 20th and 21st centuries. I also closely follow the work of Robert Hastings, particularly his book UFOs & Nukes, which delves into the unsettling correlation between UAP activity and nuclear weapons sites - raising profound questions about the intersection of these phenomena with national and global security.",
+      "subtitle": "Recent records of unexplained anomalous phenomena",
+      "title": "Recent History"
+    },
+    {
+      "description": "I closely follow the work of organizations such as Skywatcher, OpenNHI, CUFOS, MUFON, UAPx, the Scientific Coalition for UAP Studies, and the Galileo Project - groups dedicated to the scientific investigation of unexplained anomalous phenomena. Their commitment to data collection, rigorous analysis, and thoughtful engagement with both military and civilian witnesses aligns with my belief that a methodical, evidence-based approach is essential to advancing our understanding of these mysteries.",
+      "subtitle": "Scientific approaches to UAP research",
+      "title": "Modern Investigations"
+    },
+    {
+      "description": "I'm particularly inspired by the work of individuals like Chris Bledsoe, whose book UFO of God explores the profound intersection between UAP phenomena, religious experiences, and spiritual belief systems. Similarly, D.W. Pasulka's American Cosmic offers a compelling examination of how technology, faith, and the human search for meaning converge in the context of UAPs and the possibility of non-human intelligence. Both works challenge traditional narratives and invite deeper contemplation of the metaphysical dimensions of these encounters.",
+      "subtitle": "Alternative Archaeology",
+      "title": "Religious Connections"
+    },
+    {
+      "description": "Some of my most compelling research has centered on the Knights Templar - a medieval order cloaked in secrecy, legend, and enduring mystery. Their abrupt dissolution in the early 14th century, along with persistent rumors of their connection to ancient knowledge and sacred relics, has given rise to a wealth of speculation about their true mission and ultimate fate. The writings of authors such as Timothy Hogan and Scott Wolter have been particularly influential in shaping my understanding of the Templars' historical importance and their lasting imprint on modern esoteric and spiritual traditions.",
+      "subtitle": "Historical Mystery",
+      "title": "The Knights Templar"
+    }
+  ],
+  "icon": "jneal_uap",
+  "title": "UAP Research"
+}

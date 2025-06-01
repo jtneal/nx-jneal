@@ -3,7 +3,7 @@ import { Component, input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent } from '@nx-jneal/ui-core';
-import { Photo } from '@nx-jneal/util-travels';
+import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
 
 @Component({
   selector: 'lib-photos',
@@ -71,13 +71,13 @@ import { Photo } from '@nx-jneal/util-travels';
       <div class="container column">
         <h2 class="icon-heading"><mat-icon svgIcon="jneal_cam"></mat-icon>Photo Gallery</h2>
         <p class="albums double-spaced">
-          @for (album of albums(); track $index) {
+          @for (album of photos().albums; track $index) {
             <button [class.selected]="selected === $index" (click)="changeAlbum($index)" mat-flat-button>
               {{ album }}
             </button>
           }
         </p>
-        <h3 class="text-larger">{{ albums()[selected] }}</h3>
+        <h3 class="text-larger">{{ photos().albums[selected] }}</h3>
         <div class="columns columns-3 triple-spaced">
           @for (photo of album; track $index) {
             @if ($index < currentLimit) {
@@ -93,10 +93,10 @@ import { Photo } from '@nx-jneal/util-travels';
         @if (hasMore) {
           <lib-button
             class="double-spaced"
-            (click)="loadMore()"
+            (click)="loadMore($event)"
             [external]="false"
             icon="jneal_more"
-            link=""
+            link="#load-more"
             text="Load More"
           ></lib-button>
         }
@@ -105,12 +105,11 @@ import { Photo } from '@nx-jneal/util-travels';
   `,
 })
 export class PhotosComponent implements OnInit {
-  public albums = input.required<string[]>();
-  public photos = input.required<Photo[]>();
+  public photos = input.required<PhotoSection>();
 
   private readonly pageLimit = 9;
 
-  public album: Photo[] = [];
+  public album: PhotoCard[] = [];
   public currentLimit = this.pageLimit;
   public selected = 0;
 
@@ -127,13 +126,14 @@ export class PhotosComponent implements OnInit {
     this.selected = index;
 
     if (index > 0) {
-      this.album = this.photos().filter((photo) => photo.album === this.albums()[index]);
+      this.album = this.photos().cards.filter((photo) => photo.album === this.photos().albums[index]);
     } else {
-      this.album = this.photos();
+      this.album = this.photos().cards;
     }
   }
 
-  public loadMore(): void {
+  public loadMore(event: Event): void {
+    event.preventDefault();
     this.currentLimit += this.pageLimit;
   }
 }

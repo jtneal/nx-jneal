@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { LinkCardComponent } from '@nx-jneal/ui-core';
-import { Game } from '@nx-jneal/util-games';
+import { GameSection } from '@nx-jneal/util-games';
 
 @Component({
   selector: 'lib-games',
@@ -10,36 +10,25 @@ import { Game } from '@nx-jneal/util-games';
   template: `
     <section class="sub-page-large triple-spaced" id="games">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon svgIcon="jneal_game"></mat-icon>My Games</h2>
-        <h3 class="text-larger triple-spaced">Recently Played</h3>
-        <div class="columns columns-4 triple-spaced">
-          @for (game of recent(); track $index) {
-            <lib-link-card
-              [image]="game.image"
-              imageSize="small"
-              [link]="game.link"
-              subtitle="{{ game.genre }} by {{ game.developer }}"
-              [title]="game.title"
-            ></lib-link-card>
-          }
-        </div>
-        <h3 class="text-larger triple-spaced">Past Favorites</h3>
-        <div class="columns columns-4 triple-spaced">
-          @for (game of past(); track $index) {
-            <lib-link-card
-              [image]="game.image"
-              imageSize="small"
-              [link]="game.link"
-              subtitle="{{ game.genre }} by {{ game.developer }}"
-              [title]="game.title"
-            ></lib-link-card>
-          }
-        </div>
+        <h2 class="icon-heading"><mat-icon [svgIcon]="games().icon"></mat-icon>{{ games().title }}</h2>
+        @for (category of games().categories; track $index) {
+          <h3 class="text-larger triple-spaced">{{ category.title }}</h3>
+          <div class="columns columns-4 triple-spaced">
+            @for (game of category.games; track $index) {
+              <lib-link-card
+                [image]="game.image"
+                imageSize="small"
+                [link]="game.link"
+                subtitle="{{ game.genre }} by {{ game.developer }}"
+                [title]="game.title"
+              ></lib-link-card>
+            }
+          </div>
+        }
       </div>
     </section>
   `,
 })
 export class GamesComponent {
-  public past = input.required<Game[]>();
-  public recent = input.required<Game[]>();
+  public games = input.required<GameSection>();
 }
