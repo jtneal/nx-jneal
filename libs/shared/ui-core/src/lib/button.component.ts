@@ -26,6 +26,7 @@ import { RouterModule } from '@angular/router';
 
       &.bright {
         background-color: var(--white) !important;
+        border-color: var(--white);
         color: var(--vibrant-end) !important;
         width: fit-content;
       }

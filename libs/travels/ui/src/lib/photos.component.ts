@@ -44,6 +44,7 @@ import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
 
     img {
       height: 100%;
+      object-fit: cover;
       position: absolute;
       width: 100%;
     }
