@@ -1,5 +1,5 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -43,12 +43,19 @@ import { MatIconModule } from '@angular/material/icon';
     </button>
   `,
 })
-export class DarkModeToggleComponent {
-  public darkMode = true;
+export class DarkModeToggleComponent implements OnInit {
+  public darkMode = localStorage.getItem('darkMode') !== 'false';
   private readonly document = inject(DOCUMENT);
+
+  public ngOnInit(): void {
+    if (!this.darkMode) {
+      this.document.documentElement.classList.toggle('dark');
+    }
+  }
 
   public toggleDarkMode() {
     this.darkMode = !this.darkMode;
     this.document.documentElement.classList.toggle('dark');
+    localStorage.setItem('darkMode', this.darkMode.toString());
   }
 }

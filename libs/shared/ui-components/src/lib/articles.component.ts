@@ -21,6 +21,8 @@ import { ArticleSection } from '@nx-jneal/util-shared';
                 <lib-button [external]="true" icon="jneal_new" [link]="card.link" text="Read on Medium"></lib-button>
               </p>
             </lib-card>
+          } @empty {
+            <p>Stay tuned, I will begin posting some articles soon.</p>
           }
         </div>
       </div>

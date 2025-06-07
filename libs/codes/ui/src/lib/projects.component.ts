@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent, CardComponent, PillComponent } from '@nx-jneal/ui-core';
-import { ProjectCard, ProjectSection } from '@nx-jneal/util-codes';
+import { ProjectSection } from '@nx-jneal/util-codes';
 
 @Component({
   selector: 'lib-projects',
@@ -30,6 +30,8 @@ import { ProjectCard, ProjectSection } from '@nx-jneal/util-codes';
                 <lib-button [external]="true" icon="jneal_git" [link]="card.code" text="Code"></lib-button>
               </p>
             </lib-card>
+          } @empty {
+            <p>Stay tuned, I will begin adding some projects soon.</p>
           }
         </div>
       </div>

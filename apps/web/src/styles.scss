@@ -4,8 +4,9 @@
 @use '../public/styles/utilities';
 
 :root {
-  --background: #fafafa;
+  --background: #fff;
   --background-alt: #eee;
+  --background-card: #f8f8f8;
   --background-ter: #eee;
   --background-muted: #d9ceca;
   --blue-light: #dbe9fe;
@@ -32,6 +33,7 @@
 .dark {
   --background: #0f1729;
   --background-alt: #0c111f;
+  --background-card: #0c111f;
   --background-ter: #1d2839;
   --background-muted: #354863;
   --blue-light: #1d2b4a;

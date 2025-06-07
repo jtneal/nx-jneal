@@ -12,6 +12,7 @@ import { PillComponent } from './pill.component';
     }
 
     .jneal-card {
+      background: var(--background-card);
       border: 1px solid var(--background-muted);
       border-radius: 0.5rem;
       height: 100%;
