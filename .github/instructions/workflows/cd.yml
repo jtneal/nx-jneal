@@ -1,0 +1,63 @@
+name: CD
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  actions: read
+  contents: read
+  id-token: write
+  pages: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'npm'
+          node-version: 22
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: npm ci
+
+      - run: npx nx run-many -t build
+
+      - run: |
+          for lib in ./dist/libs/*; do
+            if [ -d "$lib" ]; then
+              cd "$lib"
+              npm version $GITHUB_REF_NAME
+              npm publish --provenance --access public
+              cd -
+            fi
+          done
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Fix deep links/refreshing
+        run: cp dist/apps/web/browser/index.html dist/apps/web/browser/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/apps/web/browser
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
