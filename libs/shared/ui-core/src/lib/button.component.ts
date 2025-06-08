@@ -38,7 +38,7 @@ import { RouterModule } from '@angular/router';
   `,
   template: `
     @if (external()) {
-      <a [class]="theme()" class="text-small" href="#" mat-flat-button rel="noopener noreferrer" target="_blank">
+      <a [class]="theme()" class="text-small" [href]="link()" mat-flat-button rel="noopener noreferrer" target="_blank">
         {{ text() }}
         <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
       </a>
