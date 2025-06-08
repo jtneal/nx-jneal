@@ -13,6 +13,14 @@ import { RouterModule } from '@angular/router';
       width: 100%;
     }
 
+    button {
+      background-color: var(--background-ter) !important;
+      border: 1px solid var(--background-muted);
+      border-radius: 0.5rem;
+      color: var(--foreground-muted) !important;
+      width: 100%;
+    }
+
     a {
       background-color: var(--background) !important;
       border: 1px solid var(--background-muted);
@@ -37,7 +45,12 @@ import { RouterModule } from '@angular/router';
     }
   `,
   template: `
-    @if (external()) {
+    @if (disabled()) {
+      <button [class]="theme()" class="text-small" disabled mat-flat-button>
+        {{ text() }}
+        <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
+      </button>
+    } @else if (external()) {
       <a [class]="theme()" class="text-small" [href]="link()" mat-flat-button rel="noopener noreferrer" target="_blank">
         {{ text() }}
         <mat-icon iconPositionEnd [svgIcon]="icon()"></mat-icon>
@@ -51,6 +64,7 @@ import { RouterModule } from '@angular/router';
   `,
 })
 export class ButtonComponent {
+  public disabled = input<boolean>(false);
   public external = input.required<boolean>();
   public icon = input.required<string>();
   public link = input.required<string>();

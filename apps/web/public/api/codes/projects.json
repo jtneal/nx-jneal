@@ -1,6 +1,14 @@
 {
   "cards": [
     {
+      "code": "",
+      "demo": "/images/rocket-pro-loan-dashboard.png",
+      "description": "I recently built the Rocket Pro Loan Dashboard for Rocket Mortgage.",
+      "image": "/images/rocket-pro-loan-dashboard.png",
+      "tech": ["Angular", "NestJS", "TypeScript", "HTML", "SCSS", "Nx", "ESLint", "Prettier", "Jest", "CircleCI"],
+      "title": "Rocket Pro Loan Dashboard"
+    },
+    {
       "code": "https://github.com/jtneal/nx-jneal",
       "demo": "https://www.jneal.com",
       "description": "I built this website for myself because I figured, as a web developer, I need one.",

@@ -27,7 +27,7 @@ import { ProjectSection } from '@nx-jneal/util-codes';
               <p class="double-spaced">{{ card.description }}</p>
               <p class="columns columns-2 double-spaced">
                 <lib-button [external]="true" icon="jneal_new" [link]="card.demo" text="Demo"></lib-button>
-                <lib-button [external]="true" icon="jneal_git" [link]="card.code" text="Code"></lib-button>
+                <lib-button [disabled]="card.code === ''" [external]="true" icon="jneal_git" [link]="card.code" text="Code"></lib-button>
               </p>
             </lib-card>
           } @empty {
