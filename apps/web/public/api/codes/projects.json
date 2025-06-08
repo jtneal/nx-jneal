@@ -1,5 +1,14 @@
 {
-  "cards": [],
+  "cards": [
+    {
+      "code": "",
+      "demo": "",
+      "description": "I built this website for a good friend of mine, a talented Twitch streamer known as Zwerg.",
+      "image": "/images/iiizwerg.png",
+      "tech": ["Angular", "TypeScript", "HTML", "SCSS", "Nx", "ESLint", "Prettier", "Jest", "GitHub Actions"],
+      "title": "iiizwerg"
+    }
+  ],
   "icon": "jneal_code",
   "title": "Featured Projects"
 }
