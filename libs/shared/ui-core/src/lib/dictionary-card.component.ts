@@ -17,9 +17,20 @@ export interface Dictionary {
       justify-content: space-between;
 
       span {
+        min-width: 50%;
+
+        @media (min-width: 680px) {
+          min-width: 65%;
+        }
+
         &:first-child {
           color: var(--foreground);
           font-weight: 500;
+          min-width: 50%;
+
+          @media (min-width: 680px) {
+            min-width: 35%;
+          }
         }
       }
     }

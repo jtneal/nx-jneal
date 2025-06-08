@@ -23,8 +23,14 @@ import { HeroSection } from '@nx-jneal/util-home';
     }
 
     .container {
+      flex-direction: column;
       gap: 4rem;
       width: 100%;
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+      }
     }
 
     article {

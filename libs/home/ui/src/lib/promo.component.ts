@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
       border: 1px solid;
       border-radius: 0.5rem;
       display: block;
+      height: 100%;
       overflow: hidden;
       transition: transform 0.2s ease-out;
 
@@ -35,6 +36,7 @@ import { RouterModule } from '@angular/router';
     }
 
     .card-content {
+      height: 100%;
       padding: 1.5rem;
     }
 

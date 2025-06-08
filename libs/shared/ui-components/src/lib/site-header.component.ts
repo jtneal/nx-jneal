@@ -16,11 +16,13 @@ import { DarkModeToggleComponent } from '@nx-jneal/ui-core';
       z-index: 100;
     }
 
+
     nav {
       align-items: center;
       display: flex;
+      flex-wrap: wrap;
       font-weight: 500;
-      gap: 1.5rem;
+      gap: 0.5rem 1.5rem;
 
       :first-child {
         color: var(--foreground);

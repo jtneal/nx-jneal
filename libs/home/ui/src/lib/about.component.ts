@@ -12,12 +12,20 @@ import { AboutSection } from '@nx-jneal/util-home';
     }
 
     .container {
+      flex-direction: column;
       gap: 4rem;
+
+      @media (min-width: 900px) {
+        flex-direction: row;
+      }
     }
 
     article,
     aside {
-      width: 50%;
+
+      @media (min-width: 900px) {
+        width: 50%;
+      }
     }
 
     p {
