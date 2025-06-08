@@ -1,5 +1,13 @@
 {
-  "cards": [],
+  "cards": [
+    {
+      "date": "June 17, 2021",
+      "description": "Why And How To Build A Micro Front-End Architecture In Angular.",
+      "length": 7,
+      "link": "https://medium.com/@JasonNeal/micro-front-end-architectures-28031d2da6e8",
+      "title": "Micro Front-End Architectures"
+    }
+  ],
   "icon": "jneal_book",
   "title": "Articles"
 }
