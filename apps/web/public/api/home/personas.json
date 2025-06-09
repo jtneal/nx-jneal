@@ -2,21 +2,21 @@
   "cards": [
     {
       "description": "Featured projects, work experience, education, skills & technologies, and articles.",
-      "image": "/images/screen.jpg",
+      "image": "/images/jnealcodes.png",
       "link": "/codes",
       "title": "JNealCodes",
       "theme": "red"
     },
     {
       "description": "Photo gallery and explorations of UAP phenomena, and articles on related topics.",
-      "image": "/images/pyramid.jpg",
+      "image": "/images/jnealtravels.png",
       "link": "/travels",
       "title": "JNealTravels",
       "theme": "blue"
     },
     {
       "description": "My gaming setup, recently played games, past favorites, and gaming articles.",
-      "image": "/images/gaming-pc.jpg",
+      "image": "/images/jnealgames.png",
       "link": "/games",
       "title": "JNealGames",
       "theme": "green"

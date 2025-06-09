@@ -21,7 +21,7 @@ import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/
   template: `
     <div class="red-theme">
       @if (hero$ | async; as hero) {
-        <lib-sub-hero [description]="hero.description" [image]="hero.image" [title]="hero.title"></lib-sub-hero>
+        <lib-sub-hero [image]="hero.image" [title]="hero.title"></lib-sub-hero>
       }
       <div class="sticky-container">
         @if (links$ | async; as links) {
