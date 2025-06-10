@@ -25,7 +25,9 @@ import { RouterModule } from '@angular/router';
     }
 
     img {
+      background-color: #000;
       border-radius: 0.5rem 0.5rem 0 0;
+      padding: 3rem 0;
       transition: transform 0.2s ease-out;
       width: 100%;
     }

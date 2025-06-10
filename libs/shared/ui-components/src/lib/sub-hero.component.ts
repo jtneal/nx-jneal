@@ -10,15 +10,27 @@ import { Component, input } from '@angular/core';
       padding-top: 4rem;
     }
 
+    h1 {
+      padding: 3rem 0;
+
+      @media (min-width: 768px) {
+        padding: 5rem 0;
+      }
+    }
+
     img {
-      height: 400px;
-      object-fit: cover;
+      margin: 0 auto;
       width: 100%;
+
+      @media (min-width: 768px) {
+        width: 80%;
+      }
     }
   `,
-  template: `<h1><img [alt]="title()" [src]="image()" /></h1>`,
+  template: `<h1 [ngStyle]="{ backgroundColor: color() }"><img [alt]="title()" [src]="image()" /></h1>`,
 })
 export class SubHeroComponent {
+  public color = input.required<string>();
   public image = input.required<string>();
   public title = input.required<string>();
 }

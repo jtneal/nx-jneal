@@ -10,7 +10,7 @@ import { GamesComponent, SetupComponent } from '@nx-jneal/ui-games';
   template: `
     <div class="green-theme">
       @if (hero$ | async; as hero) {
-        <lib-sub-hero [image]="hero.image" [title]="hero.title"></lib-sub-hero>
+        <lib-sub-hero color="#050607" [image]="hero.image" [title]="hero.title"></lib-sub-hero>
       }
       <div class="sticky-container">
         @if (links$ | async; as links) {

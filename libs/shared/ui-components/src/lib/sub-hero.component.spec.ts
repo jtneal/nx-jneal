@@ -12,7 +12,7 @@ describe(SubHeroComponent.name, () => {
 
     fixture = TestBed.createComponent(SubHeroComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('description', 'description');
+    fixture.componentRef.setInput('color', 'color');
     fixture.componentRef.setInput('image', 'image');
     fixture.componentRef.setInput('title', 'title');
     fixture.detectChanges();
