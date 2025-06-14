@@ -4,4 +4,3 @@
 
 export * from './lib/photos.component';
 export * from './lib/research.component';
-export * from './lib/videos.component';

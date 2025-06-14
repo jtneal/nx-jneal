@@ -68,9 +68,9 @@ import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
     }
   `,
   template: `
-    <section class="sub-page" id="photos">
+    <section class="sub-page-large" id="photos">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon [svgIcon]="photos().icon"></mat-icon>{{ photos().title }}</h2>
+        <h2 class="icon-heading"><mat-icon [svgIcon]="photos().icon"></mat-icon>{{ photos().title }}</h2>
         <p class="albums double-spaced">
           @for (album of photos().albums; track $index) {
             <button [class.selected]="selected === $index" (click)="changeAlbum($index)" mat-flat-button>

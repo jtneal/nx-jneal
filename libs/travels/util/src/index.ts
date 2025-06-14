@@ -4,4 +4,3 @@
 
 export * from './lib/photo-section.interface';
 export * from './lib/research-section.interface';
-export * from './lib/video-section.interface';

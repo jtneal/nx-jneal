@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { ArticleSection, Hero, Link } from '@nx-jneal/util-shared';
-import { PhotoCard, PhotoSection, ResearchCard, ResearchSection, VideoSection } from '@nx-jneal/util-travels';
+import { ArticleSection, Hero, Link, VideoSection } from '@nx-jneal/util-shared';
+import { PhotoSection, ResearchSection } from '@nx-jneal/util-travels';
 import { Observable } from 'rxjs';
 
 @Injectable({

@@ -7,3 +7,4 @@ export * from './lib/site-footer.component';
 export * from './lib/site-header.component';
 export * from './lib/sub-hero.component';
 export * from './lib/sub-nav.component';
+export * from './lib/videos.component';

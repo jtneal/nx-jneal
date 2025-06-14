@@ -3,7 +3,7 @@ import { Component, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CodesService } from '@nx-jneal/data-access-codes';
 import { EducationComponent, ExperienceComponent, ProjectsComponent, SkillsComponent } from '@nx-jneal/ui-codes';
-import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/ui-components';
+import { ArticlesComponent, SubHeroComponent, SubNavComponent, VideosComponent } from '@nx-jneal/ui-components';
 
 @Component({
   selector: 'lib-feature-codes',
@@ -17,6 +17,7 @@ import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/
     SkillsComponent,
     SubHeroComponent,
     SubNavComponent,
+    VideosComponent,
   ],
   template: `
     <div class="red-theme">
@@ -30,6 +31,9 @@ import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/
         <div class="sub-content">
           @if (projects$ | async; as projects) {
             <lib-projects [projects]="projects"></lib-projects>
+          }
+          @if (videos$ | async; as videos) {
+            <lib-videos [videos]="videos"></lib-videos>
           }
           @if (experience$ | async; as experience) {
             <lib-experience [experience]="experience"></lib-experience>
@@ -58,4 +62,5 @@ export class FeatureCodesComponent {
   public readonly links$ = this.service.getLinks();
   public readonly projects$ = this.service.getProjects();
   public readonly skills$ = this.service.getSkills();
+  public readonly videos$ = this.service.getVideos();
 }

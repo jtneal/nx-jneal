@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { EducationSection, ExperienceSection, ProjectSection, SkillCard, SkillSection } from '@nx-jneal/util-codes';
-import { ArticleSection, Hero, Link } from '@nx-jneal/util-shared';
+import { ArticleSection, Hero, Link, VideoSection } from '@nx-jneal/util-shared';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -36,5 +36,9 @@ export class CodesService {
 
   public getSkills(): Observable<SkillSection> {
     return this.http.get<SkillSection>('/api/codes/skills.json');
+  }
+
+  public getVideos(): Observable<VideoSection> {
+    return this.http.get<VideoSection>('/api/codes/videos.json');
   }
 }

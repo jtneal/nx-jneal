@@ -5,6 +5,11 @@
     "title": "Projects"
   },
   {
+    "icon": "jneal_vid",
+    "link": "videos",
+    "title": "Videos"
+  },
+  {
     "icon": "jneal_work",
     "link": "experience",
     "title": "Experience"

@@ -1,0 +1,59 @@
+{
+  "albums": ["All Videos", "Quality Decoded"],
+  "cards": [
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/M4olo36PqPY?si=guWI1dex8rUFWOX2"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/cISjYe_HFqQ?si=uYme6lQ0k5Og1h-I"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/qQUJU6m1wkk?si=360EninKwS7k0Jwb"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/O5e0t2gwMe0?si=2Cd3R-WOELTzUhZR"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/VDUZcNLGJao?si=MUFw4pORoQqarTjM"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/JFE6iwKL0As?si=Koh1plVqgn48WXT4"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/VdAkH4O5WzU?si=C7qkBFUR1rMIp5mE"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/bkoQVHl73ng?si=vuT1YQba22m1s6CV"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/0qbgnEMm3h8?si=4SnAkMmj7k3Ir4fn"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/kAUnetWc3PU?si=DLPXXhb2LrZ1J_kW"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/TmcPNjGL37o?si=T-hmJu4hspvfQZUy"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/pXqz1_eltZE?si=A93k6b19xV8pGVtR"
+    },
+    {
+      "album": "Quality Decoded",
+      "src": "https://www.youtube.com/embed/7SB9bjxaGY8?si=MJ1R-spU1EBAD064"
+    }
+  ],
+  "icon": "jneal_vid",
+  "title": "Video Gallery"
+}

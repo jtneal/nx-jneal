@@ -26,6 +26,7 @@ export interface SubNavLink {
     .container {
       gap: 1.5rem;
       justify-content: left;
+      flex-wrap: wrap;
     }
 
     button {

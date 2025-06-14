@@ -6,3 +6,4 @@ export * from './lib/article-section.interface';
 export * from './lib/dictionary.interface';
 export * from './lib/hero.interface';
 export * from './lib/link.interface';
+export * from './lib/video-section.interface';

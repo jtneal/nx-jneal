@@ -1,18 +1,18 @@
 [
   {
-    "icon": "jneal_vid",
-    "link": "videos",
-    "title": "Video Gallery"
-  },
-  {
     "icon": "jneal_cam",
     "link": "photos",
-    "title": "Photo Gallery"
+    "title": "Photos"
+  },
+  {
+    "icon": "jneal_vid",
+    "link": "videos",
+    "title": "Videos"
   },
   {
     "icon": "jneal_uap",
     "link": "research",
-    "title": "UAP Research"
+    "title": "Research"
   },
   {
     "icon": "jneal_book",

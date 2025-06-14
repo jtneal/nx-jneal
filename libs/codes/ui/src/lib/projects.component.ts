@@ -13,7 +13,7 @@ import { ProjectSection } from '@nx-jneal/util-codes';
     }
   `,
   template: `
-    <section class="sub-page-large " id="projects">
+    <section class="sub-page-large" id="projects">
       <div class="container column">
         <h2 class="icon-heading"><mat-icon [svgIcon]="projects().icon"></mat-icon>{{ projects().title }}</h2>
         <div class="columns columns-3 triple-spaced">

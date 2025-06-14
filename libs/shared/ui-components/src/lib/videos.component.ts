@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ButtonComponent } from '@nx-jneal/ui-core';
-import { VideoCard, VideoSection } from '@nx-jneal/util-travels';
+import { VideoCard, VideoSection } from '@nx-jneal/util-shared';
 
 @Component({
   selector: 'lib-videos',
@@ -31,9 +31,9 @@ import { VideoCard, VideoSection } from '@nx-jneal/util-travels';
     }
   `,
   template: `
-    <section class="sub-page-large" id="videos">
+    <section class="sub-page" id="videos">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon [svgIcon]="videos().icon"></mat-icon>{{ videos().title }}</h2>
+        <h2 class="icon-heading triple-spaced"><mat-icon [svgIcon]="videos().icon"></mat-icon>{{ videos().title }}</h2>
         <p class="albums double-spaced">
           @for (album of videos().albums; track $index) {
             <button [class.selected]="selected === $index" (click)="changeAlbum($index)" mat-flat-button>

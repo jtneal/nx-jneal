@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TravelsService } from '@nx-jneal/data-access-travels';
-import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/ui-components';
-import { PhotosComponent, ResearchComponent, VideosComponent } from '@nx-jneal/ui-travels';
+import { ArticlesComponent, SubHeroComponent, SubNavComponent, VideosComponent } from '@nx-jneal/ui-components';
+import { PhotosComponent, ResearchComponent } from '@nx-jneal/ui-travels';
 
 @Component({
   selector: 'lib-feature-travels',
@@ -25,11 +25,11 @@ import { PhotosComponent, ResearchComponent, VideosComponent } from '@nx-jneal/u
           <lib-sub-nav [links]="links"></lib-sub-nav>
         }
         <div class="sub-content">
-          @if (videos$ | async; as videos) {
-            <lib-videos [videos]="videos"></lib-videos>
-          }
           @if (photos$ | async; as photos) {
             <lib-photos [photos]="photos"></lib-photos>
+          }
+          @if (videos$ | async; as videos) {
+            <lib-videos [videos]="videos"></lib-videos>
           }
           @if (research$ | async; as research) {
             <lib-research [research]="research"></lib-research>
