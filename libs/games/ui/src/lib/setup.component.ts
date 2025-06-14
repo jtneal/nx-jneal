@@ -11,7 +11,7 @@ import { SetupSection } from '@nx-jneal/util-games';
   template: `
     <section class="sub-page-large" id="setup">
       <div class="container column">
-        <h2 class="icon-heading"><mat-icon svgIcon="jneal_pc"></mat-icon>{{ setup().title }}</h2>
+        <h2 class="icon-heading"><mat-icon [svgIcon]="setup().icon"></mat-icon>{{ setup().title }}</h2>
         <p class="double-spaced">
           {{ setup().description }}
         </p>

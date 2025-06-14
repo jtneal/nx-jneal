@@ -1,0 +1,11 @@
+{
+  "albums": ["All Videos", "Egypt 2022"],
+  "cards": [
+    {
+      "album": "Egypt 2022",
+      "src": "https://www.youtube.com/embed/mw2JsXPeAiU?si=vWRHZHvc6qrqeQoN"
+    }
+  ],
+  "icon": "jneal_cam",
+  "title": "Video Gallery"
+}

@@ -16,7 +16,6 @@ import { DarkModeToggleComponent } from '@nx-jneal/ui-core';
       z-index: 100;
     }
 
-
     nav {
       align-items: center;
       display: flex;

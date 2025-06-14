@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, input, OnInit } from '@angular/core';
+import { Component, inject, input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ButtonComponent } from '@nx-jneal/ui-core';
-import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
+import { VideoCard, VideoSection } from '@nx-jneal/util-travels';
 
 @Component({
-  selector: 'lib-photos',
+  selector: 'lib-videos',
   imports: [ButtonComponent, CommonModule, MatButtonModule, MatIconModule],
   styles: `
     button {
@@ -25,69 +26,27 @@ import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
       }
     }
 
-    a {
-      border-radius: 0.5rem;
-      display: block;
-      height: 300px;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover {
-        transform: scale(1.03);
-
-        caption {
-          opacity: 1;
-        }
-      }
-    }
-
-    img {
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      width: 100%;
-    }
-
-    caption {
-      background-image: linear-gradient(transparent, rgb(0 0 0 / 0.7));
-      bottom: 0;
-      font-weight: 500;
-      height: 50%;
-      opacity: 0;
-      position: absolute;
-      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      width: 100%;
-
-      span {
-        bottom: 1.1rem;
-        display: block;
-        left: 1.5rem;
-        position: absolute;
-      }
+    iframe {
+      border-radius: 0.75rem;
     }
   `,
   template: `
-    <section class="sub-page" id="photos">
+    <section class="sub-page-large" id="videos">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon [svgIcon]="photos().icon"></mat-icon>{{ photos().title }}</h2>
+        <h2 class="icon-heading"><mat-icon [svgIcon]="videos().icon"></mat-icon>{{ videos().title }}</h2>
         <p class="albums double-spaced">
-          @for (album of photos().albums; track $index) {
+          @for (album of videos().albums; track $index) {
             <button [class.selected]="selected === $index" (click)="changeAlbum($index)" mat-flat-button>
               {{ album }}
             </button>
           }
         </p>
-        <h3 class="text-larger">{{ photos().albums[selected] }}</h3>
+        <h3 class="text-larger">{{ videos().albums[selected] }}</h3>
         <div class="columns columns-3 triple-spaced">
-          @for (photo of album; track $index) {
+          @for (video of album; track $index) {
             @if ($index < currentLimit) {
-              <a [href]="photo.link" rel="noopener noreferrer" target="_blank">
-                <img [alt]="photo.title" [src]="photo.src" />
-                <caption>
-                  <span>{{ photo.title }}</span>
-                </caption>
-              </a>
+              <!-- prettier-ignore -->
+              <iframe height="225" [src]="video.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             }
           }
         </div>
@@ -105,12 +64,14 @@ import { PhotoCard, PhotoSection } from '@nx-jneal/util-travels';
     </section>
   `,
 })
-export class PhotosComponent implements OnInit {
-  public photos = input.required<PhotoSection>();
+export class VideosComponent implements OnInit {
+  private readonly sanitizer = inject(DomSanitizer);
+
+  public videos = input.required<VideoSection>();
 
   private readonly pageLimit = 9;
 
-  public album: PhotoCard[] = [];
+  public album: VideoCard[] = [];
   public currentLimit = this.pageLimit;
   public selected = 0;
 
@@ -127,10 +88,16 @@ export class PhotosComponent implements OnInit {
     this.selected = index;
 
     if (index > 0) {
-      this.album = this.photos().cards.filter((photo) => photo.album === this.photos().albums[index]);
+      this.album = this.videos().cards.filter((video) => video.album === this.videos().albums[index]);
     } else {
-      this.album = this.photos().cards;
+      this.album = this.videos().cards;
     }
+
+    // Sanitize the video URLs
+    this.album = this.album.map((video) => ({
+      ...video,
+      src: this.sanitizer.bypassSecurityTrustResourceUrl(video.src) as never,
+    }));
   }
 
   public loadMore(event: Event): void {

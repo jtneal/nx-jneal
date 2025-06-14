@@ -2,11 +2,19 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TravelsService } from '@nx-jneal/data-access-travels';
 import { ArticlesComponent, SubHeroComponent, SubNavComponent } from '@nx-jneal/ui-components';
-import { PhotosComponent, ResearchComponent } from '@nx-jneal/ui-travels';
+import { PhotosComponent, ResearchComponent, VideosComponent } from '@nx-jneal/ui-travels';
 
 @Component({
   selector: 'lib-feature-travels',
-  imports: [ArticlesComponent, CommonModule, PhotosComponent, ResearchComponent, SubHeroComponent, SubNavComponent],
+  imports: [
+    ArticlesComponent,
+    CommonModule,
+    PhotosComponent,
+    ResearchComponent,
+    SubHeroComponent,
+    SubNavComponent,
+    VideosComponent,
+  ],
   template: `
     <div class="blue-theme">
       @if (hero$ | async; as hero) {
@@ -17,6 +25,9 @@ import { PhotosComponent, ResearchComponent } from '@nx-jneal/ui-travels';
           <lib-sub-nav [links]="links"></lib-sub-nav>
         }
         <div class="sub-content">
+          @if (videos$ | async; as videos) {
+            <lib-videos [videos]="videos"></lib-videos>
+          }
           @if (photos$ | async; as photos) {
             <lib-photos [photos]="photos"></lib-photos>
           }
@@ -39,4 +50,5 @@ export class FeatureTravelsComponent {
   public readonly links$ = this.service.getLinks();
   public readonly photos$ = this.service.getPhotos();
   public readonly research$ = this.service.getResearch();
+  public readonly videos$ = this.service.getVideos();
 }

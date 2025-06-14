@@ -11,7 +11,9 @@ import { ResearchSection } from '@nx-jneal/util-travels';
   template: `
     <section class="sub-page" id="research">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_uap"></mat-icon>UAP Research</h2>
+        <h2 class="icon-heading triple-spaced">
+          <mat-icon [svgIcon]="research().icon"></mat-icon>{{ research().title }}
+        </h2>
         <p class="triple-spaced">
           I've been fascinated by the mysteries of the universe and the possibility of non-human intelligence (NHI) for
           as long as I can remember. My research into Unidentified Anomalous Phenomena (UAP) and related topics has been

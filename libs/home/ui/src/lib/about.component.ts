@@ -22,7 +22,6 @@ import { AboutSection } from '@nx-jneal/util-home';
 
     article,
     aside {
-
       @media (min-width: 900px) {
         width: 50%;
       }

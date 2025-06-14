@@ -1,6 +1,11 @@
 [
   {
     "icon": "jneal_cam",
+    "link": "videos",
+    "title": "Video Gallery"
+  },
+  {
+    "icon": "jneal_cam",
     "link": "photos",
     "title": "Photo Gallery"
   },

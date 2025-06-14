@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ArticleSection, Hero, Link } from '@nx-jneal/util-shared';
-import { PhotoCard, PhotoSection, ResearchCard, ResearchSection } from '@nx-jneal/util-travels';
+import { PhotoCard, PhotoSection, ResearchCard, ResearchSection, VideoSection } from '@nx-jneal/util-travels';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -28,5 +28,9 @@ export class TravelsService {
 
   public getResearch(): Observable<ResearchSection> {
     return this.http.get<ResearchSection>('/api/travels/research.json');
+  }
+
+  public getVideos(): Observable<VideoSection> {
+    return this.http.get<VideoSection>('/api/travels/videos.json');
   }
 }

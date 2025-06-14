@@ -10,7 +10,9 @@ import { ExperienceSection } from '@nx-jneal/util-codes';
   template: `
     <section class="sub-page" id="experience">
       <div class="container column">
-        <h2 class="icon-heading triple-spaced"><mat-icon svgIcon="jneal_work"></mat-icon>Work Experience</h2>
+        <h2 class="icon-heading triple-spaced">
+          <mat-icon [svgIcon]="experience().icon"></mat-icon>{{ experience().title }}
+        </h2>
         @for (card of experience().cards; track $index) {
           <lib-card [badge]="card.dates" class="triple-spaced" [subtitle]="card.company" [title]="card.title">
             <ul class="highlight content double-spaced">
