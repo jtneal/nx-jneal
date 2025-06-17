@@ -1,6 +1,14 @@
 {
   "cards": [
     {
+      "code": "https://github.com/jtneal/idea-nebula",
+      "demo": "https://www.idea-nebula.com",
+      "description": "An idea management progressive web app with a beautiful space-themed interface.",
+      "image": "/images/idea-nebula.png",
+      "tech": ["Angular", "TypeScript", "HTML", "SCSS", "Nx", "ESLint", "Prettier", "Jest", "GitHub Actions"],
+      "title": "Idea Nebula"
+    },
+    {
       "code": "",
       "demo": "/images/rocket-pro-loan-dashboard.png",
       "description": "I recently built the Rocket Pro Loan Dashboard for Rocket Mortgage.",
