@@ -1,6 +1,10 @@
 {
-  "albums": ["All Videos", "Quality Decoded"],
+  "albums": ["All Videos", "Hackathons", "Quality Decoded"],
   "cards": [
+    {
+      "album": "Hackathons",
+      "src": "https://www.youtube.com/embed/ilCZSr8wg4U?si=aVSbR0iWTEm7eGmc"
+    },
     {
       "album": "Quality Decoded",
       "src": "https://www.youtube.com/embed/M4olo36PqPY?si=guWI1dex8rUFWOX2"
